@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "example-llm-conversation-stance",
+    "title": "A Pilot Research Note on Conversational Stance in Large Language Models",
+    "authors": ["3099404236"],
+    "date": "2026-07",
+    "abstract": "This dummy record demonstrates the publishing workflow for a lightweight research note. Replace it with a real project after the template is ready. The generated detail page includes citation metadata and links to the PDF, GitHub repository, DOI, and discussion thread.",
+    "pdf": "papers/example-llm-conversation-stance.pdf",
+    "github": "https://github.com/3099404236/research-note-template",
+    "doi": "",
+    "discussion": "https://github.com/3099404236/research-note-template/discussions"
+  }
+]
+
