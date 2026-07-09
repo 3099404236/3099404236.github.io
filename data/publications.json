@@ -1,14 +1,25 @@
 [
   {
     "slug": "example-llm-conversation-stance",
+    "category": "research",
+    "kind": "Research note",
     "title": "A Pilot Research Note on Conversational Stance in Large Language Models",
     "authors": ["3099404236"],
     "date": "2026-07",
-    "abstract": "This dummy record demonstrates the publishing workflow for a lightweight research note. Replace it with a real project after the template is ready. The generated detail page includes citation metadata and links to the PDF, GitHub repository, DOI, and discussion thread.",
-    "pdf": "papers/example-llm-conversation-stance.pdf",
+    "summary": "A lightweight research-note example for testing the publishing workflow. The project keeps code, PDF, and optional discussion links together while leaving DOI and slides as optional milestone artifacts.",
+    "abstract": "This dummy record demonstrates the publishing workflow for a lightweight research note. Replace it with a real project after the template is ready. The generated detail page includes citation metadata when a research PDF is available, plus links to code, versions, and discussion.",
     "github": "https://github.com/3099404236/research-note-template",
-    "doi": "",
-    "discussion": "https://github.com/3099404236/research-note-template/discussions"
+    "discussion": "https://github.com/3099404236/research-note-template/discussions",
+    "versions": [
+      {
+        "label": "v0.1",
+        "date": "2026-07",
+        "note": "Workflow demonstration with a simple PDF report.",
+        "pdf": "papers/example-llm-conversation-stance.pdf",
+        "slides": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
   }
 ]
-
