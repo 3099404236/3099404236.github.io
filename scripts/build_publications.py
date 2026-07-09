@@ -11,18 +11,18 @@ PUB_DIR = ROOT / "publications"
 CATEGORIES = [
     (
         "research",
-        "Research",
-        "Paper-like notes, experiments, and research questions with PDF reports.",
+        "研究",
+        "偏研究型的笔记、实验和问题探索，通常有 PDF 报告。",
     ),
     (
         "tools",
-        "Tools",
-        "Code-first utilities, pipelines, and reusable helpers.",
+        "工具",
+        "以代码为主的工具、流程、脚本、数据处理管线和可复用组件。",
     ),
     (
         "applications",
-        "Applications",
-        "Applied demos, products, and practical experiments.",
+        "应用",
+        "偏实际使用的 Demo、应用、仪表盘、产品原型和落地实验。",
     ),
 ]
 
@@ -52,7 +52,7 @@ def normalize_item(item):
     if "versions" not in item:
         item = dict(item)
         item["category"] = item.get("category", "research")
-        item["kind"] = item.get("kind", "Research note")
+        item["kind"] = item.get("kind", "研究笔记")
         item["summary"] = item.get("summary", item.get("abstract", ""))
         item["versions"] = [
             {
@@ -91,28 +91,28 @@ def project_links(item):
     version = latest_version(item)
     return [
         ("PDF", version.get("pdf", "")),
-        ("Slides", version.get("slides", "")),
-        ("Demo", first_present(version.get("demo"), item.get("demo"))),
+        ("幻灯片", version.get("slides", "")),
+        ("演示", first_present(version.get("demo"), item.get("demo"))),
         ("GitHub", item.get("github", "")),
-        ("Release", version.get("release", "")),
+        ("发布版本", version.get("release", "")),
         ("DOI", version.get("doi", "")),
-        ("Discussion", item.get("discussion", "")),
+        ("讨论", item.get("discussion", "")),
     ]
 
 
 def version_links(version):
     return [
         ("PDF", version.get("pdf", "")),
-        ("Slides", version.get("slides", "")),
-        ("Demo", version.get("demo", "")),
-        ("Release", version.get("release", "")),
+        ("幻灯片", version.get("slides", "")),
+        ("演示", version.get("demo", "")),
+        ("发布版本", version.get("release", "")),
         ("DOI", version.get("doi", "")),
     ]
 
 
 def page_shell(title, body, extra_head="", stylesheet="../assets/style.css"):
     return f"""<!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -155,7 +155,7 @@ def render_version(version, prefix=""):
     links = [(label, local_href(href, prefix)) for label, href in version_links(version)]
     return f"""        <li>
           <div class="version-head">
-            <strong>{esc(version.get("label", "Version"))}</strong>
+            <strong>{esc(version.get("label", "版本"))}</strong>
             <span>{esc(version.get("date", ""))}</span>
           </div>
           {f'<p>{esc(note)}</p>' if note else ''}
@@ -175,12 +175,12 @@ def render_project_summary(item):
           <span class="project-title">{esc(item["title"])}</span>
           <span class="meta">{esc(item.get("kind", ""))} · {esc(authors)} · {esc(item.get("date", ""))}</span>
         </span>
-        <span class="project-toggle">Details</span>
+        <span class="project-toggle">详情</span>
       </summary>
       <div class="project-body">
         {f'<p>{esc(summary)}</p>' if summary else ''}
-        {render_links([("Project page", detail_path), *project_links(item)])}
-        <h3>Versions</h3>
+        {render_links([("项目页", detail_path), *project_links(item)])}
+        <h3>版本记录</h3>
         <ol class="timeline">
 {versions}
         </ol>
@@ -193,7 +193,7 @@ def render_detail_page(item):
     abstract = first_present(item.get("abstract"), item.get("summary"))
     versions = "\n".join(render_version(version, prefix="../") for version in item.get("versions", []))
 
-    links = [("Projects", "../publications.html")]
+    links = [("项目列表", "../publications.html")]
     latest_links = []
     for label, href in project_links(item):
         href = local_href(href, prefix="../")
@@ -204,9 +204,9 @@ def render_detail_page(item):
       <p class="eyebrow">{esc(item.get("kind", ""))}</p>
       <h1>{esc(item["title"])}</h1>
       <div class="meta">{esc(authors)} · {esc(item.get("date", ""))}</div>
-      {f'<h2>Summary</h2><p>{esc(abstract)}</p>' if abstract else ''}
+      {f'<h2>摘要</h2><p>{esc(abstract)}</p>' if abstract else ''}
       {render_links(latest_links)}
-      <h2>Versions</h2>
+      <h2>版本记录</h2>
       <ol class="timeline detail-timeline">
 {versions}
       </ol>
@@ -236,12 +236,12 @@ def build():
         projects = grouped.get(key, [])
         count = len(projects)
         entries = "\n".join(render_project_summary(item) for item in projects)
-        empty = '<p class="empty">No projects in this category yet.</p>' if not projects else ""
+        empty = '<p class="empty">这个栏目还没有项目。</p>' if not projects else ""
         sections.append(
             f"""    <section class="category" id="{esc(key)}">
       <div class="category-head">
         <h2>{esc(label)}</h2>
-        <span>{count} item{'s' if count != 1 else ''}</span>
+        <span>{count} 项</span>
       </div>
       <p>{esc(desc)}</p>
 {entries}
@@ -250,12 +250,12 @@ def build():
         )
 
     publications_body = """    <header class="site-header">
-      <h1>Projects</h1>
-      <p>Research notes, tools, and applied demos. Each project can expand into versions, PDFs, code, and optional DOI or slides links.</p>
+      <h1>项目</h1>
+      <p>这里放研究笔记、工具和应用 Demo。每个项目都可以展开查看版本、PDF、代码，以及可选的 DOI、幻灯片或讨论链接。</p>
     </header>
-    <nav><a href="index.html">Home</a><a href="#research">Research</a><a href="#tools">Tools</a><a href="#applications">Applications</a><a href="https://github.com/3099404236">GitHub</a></nav>
+    <nav><a href="index.html">首页</a><a href="#research">研究</a><a href="#tools">工具</a><a href="#applications">应用</a><a href="https://github.com/3099404236">GitHub</a></nav>
 """ + "\n".join(sections)
-    (ROOT / "publications.html").write_text(root_page_shell("Projects", publications_body), encoding="utf-8")
+    (ROOT / "publications.html").write_text(root_page_shell("项目", publications_body), encoding="utf-8")
 
 
 if __name__ == "__main__":
