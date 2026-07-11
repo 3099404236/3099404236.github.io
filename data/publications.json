@@ -1,5 +1,28 @@
 [
   {
+    "slug": "gender-swapped-career-benchmark",
+    "category": "research",
+    "kind": "探索性研究",
+    "title": "性别交换职业评估中的大模型差异",
+    "authors": ["3099404236"],
+    "date": "2026-07",
+    "summary": "使用30对仅替换姓名与性别的职业档案，比较大模型在整体前景、职业天花板和限制性建议上的输出差异。",
+    "abstract": "本项目构造覆盖30个行业与岗位转型场景的性别交换职业档案，生成60份独立职业评估，再经匿名化后进行随机A/B盲评。三个总体指标均未达到统计显著，但财务分析师到基金经理、航空运营经理到运营总监等案例出现了方向一致的女性不利差异。当前结果是同一模型生成并裁判、每对只运行一次的探索性pilot，适合发现案例，不作为模型存在或不存在性别偏见的最终结论。",
+    "github": "https://github.com/3099404236/gender-swapped-career-benchmark",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v0.1",
+        "date": "2026-07",
+        "note": "首个公开版本：包含完整代码、30对提示、60份回答、盲评记录和三页PDF报告。",
+        "pdf": "papers/gender-swapped-career-benchmark-v0.1.pdf",
+        "slides": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
     "slug": "example-llm-conversation-stance",
     "category": "research",
     "kind": "研究笔记",
