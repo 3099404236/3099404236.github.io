@@ -1,5 +1,28 @@
 [
   {
+    "slug": "csi300-distribution-forecast",
+    "category": "research",
+    "kind": "量化研究笔记",
+    "title": "沪深300历史成分股下的收益分布预测与交易检验",
+    "authors": ["Junxiang Zeng"],
+    "date": "2026-07",
+    "summary": "使用历史时点沪深300成分股比较QRNN、EWMA、GARCH和历史分布，并检验预测偏度多空策略。QRNN的CRPS略优于基线，但策略在10个基点成本后亏损。",
+    "abstract": "本项目基于596只历史成分股构建point-in-time面板，在2023至2025年测试期比较未来5日收益分布预测。QRNN在216,046个统一样本上的CRPS为0.026791，较EWMA改善约0.83%。收盘后生成信号并在下一日开盘执行的偏度多空策略，毛收益年化均值为1.76%，加入10个基点调仓成本后为-3.24%；毛收益检验p值为0.774。结果支持分布预测存在轻微增益，但不支持策略具有可交易的盈利能力。",
+    "github": "https://github.com/3099404236/csi300-distribution-forecast",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v0.1",
+        "date": "2026-07",
+        "note": "首个公开版本：包含完整代码、历史成分口径、聚合结果和四页PDF报告。",
+        "pdf": "papers/csi300-distribution-forecast.pdf",
+        "slides": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
     "slug": "gender-swapped-career-benchmark",
     "category": "research",
     "kind": "探索性研究",
