@@ -1,5 +1,28 @@
 [
   {
+    "slug": "a-share-institutional-behavior",
+    "category": "research",
+    "kind": "实证量化研究",
+    "title": "A股“主力吸筹”叙事的实证检验：机构持仓、处罚案例与可交易性",
+    "authors": ["Junxiang Zeng"],
+    "date": "2026-07",
+    "summary": "使用2015至2025年历史全市场机构持仓、日线行情和证监会处罚案例，检验“低波动横盘、缩量吸筹、温和放量拉升”叙事，并在公告日、可成交性、交易成本和样本外约束下测试其可交易性。",
+    "abstract": "本研究从持仓真相和官方处罚记录倒推量价行为，而不是先按K线猜测主力。样本包含44个季度、5,453个历史A股代码、162,791个相邻季度机构持仓变化、28个操纵窗口和17,361个纯价量信号。机构增持最高组相对最低组的当季收益均值为7.75%，但成交额斜率没有稳健增加；16个可配对处罚周期的出货期成交额约高175.2%。公告后机构信号与纯价量信号在扣除35bp往返成本后均未形成稳健的正alpha，2023至2025留出期结论也不支持可投入实盘的“主力战法”。",
+    "github": "https://github.com/3099404236/a-share-institutional-behavior",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v1.0",
+        "date": "2026-07",
+        "note": "首个正式版本：包含完整研究代码、历史股票池、处罚案例登记、聚合结果、九页PDF报告和复现说明。",
+        "pdf": "papers/a-share-institutional-behavior.pdf",
+        "slides": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
     "slug": "csi300-distribution-forecast",
     "category": "research",
     "kind": "量化研究笔记",
