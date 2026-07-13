@@ -1,118 +1,128 @@
 [
-  {
-    "slug": "a-share-institutional-behavior",
-    "category": "research",
-    "kind": "实证量化研究",
-    "title": "A股“主力吸筹”叙事的实证检验：机构持仓、处罚案例与可交易性",
-    "authors": ["Junxiang Zeng"],
-    "date": "2026-07",
-    "summary": "使用2015至2025年历史全市场机构持仓、日线行情和证监会处罚案例，检验“低波动横盘、缩量吸筹、温和放量拉升”叙事，并在公告日、可成交性、交易成本和样本外约束下测试其可交易性。",
-    "abstract": "本研究从持仓真相和官方处罚记录倒推量价行为，而不是先按K线猜测主力。样本包含44个季度、5,453个历史A股代码、162,791个相邻季度机构持仓变化、28个操纵窗口和17,361个纯价量信号。机构增持最高组相对最低组的当季收益均值为7.75%，但成交额斜率没有稳健增加；16个可配对处罚周期的出货期成交额约高175.2%。公告后机构信号与纯价量信号在扣除35bp往返成本后均未形成稳健的正alpha，2023至2025留出期结论也不支持可投入实盘的“主力战法”。",
-    "github": "https://github.com/3099404236/a-share-institutional-behavior",
-    "discussion": "",
-    "versions": [
-      {
-        "label": "v1.0",
-        "date": "2026-07",
-        "note": "首个正式版本：包含完整研究代码、历史股票池、处罚案例登记、聚合结果、九页PDF报告和复现说明。",
-        "pdf": "papers/a-share-institutional-behavior.pdf",
-        "slides": "",
-        "release": "",
-        "doi": ""
-      }
-    ]
-  },
-  {
-    "slug": "csi300-distribution-forecast",
-    "category": "research",
-    "kind": "量化研究笔记",
-    "title": "沪深300历史成分股下的收益分布预测与交易检验",
-    "authors": ["Junxiang Zeng"],
-    "date": "2026-07",
-    "summary": "使用历史时点沪深300成分股比较QRNN、EWMA、GARCH和历史分布，并检验预测偏度多空策略。QRNN的CRPS略优于基线，但策略在10个基点成本后亏损。",
-    "abstract": "本项目基于596只历史成分股构建point-in-time面板，在2023至2025年测试期比较未来5日收益分布预测。QRNN在216,046个统一样本上的CRPS为0.026791，较EWMA改善约0.83%。收盘后生成信号并在下一日开盘执行的偏度多空策略，毛收益年化均值为1.76%，加入10个基点调仓成本后为-3.24%；毛收益检验p值为0.774。结果支持分布预测存在轻微增益，但不支持策略具有可交易的盈利能力。",
-    "github": "https://github.com/3099404236/csi300-distribution-forecast",
-    "discussion": "",
-    "versions": [
-      {
-        "label": "v0.1",
-        "date": "2026-07",
-        "note": "首个公开版本：包含完整代码、历史成分口径、聚合结果和四页PDF报告。",
-        "pdf": "papers/csi300-distribution-forecast.pdf",
-        "slides": "",
-        "release": "",
-        "doi": ""
-      }
-    ]
-  },
-  {
-    "slug": "gender-swapped-career-benchmark",
-    "category": "research",
-    "kind": "探索性研究",
-    "title": "性别交换职业评估中的大模型差异",
-    "authors": ["3099404236"],
-    "date": "2026-07",
-    "summary": "使用30对仅替换姓名与性别的职业档案，比较大模型在整体前景、职业天花板和限制性建议上的输出差异。",
-    "abstract": "本项目构造覆盖30个行业与岗位转型场景的性别交换职业档案，生成60份独立职业评估，再经匿名化后进行随机A/B盲评。三个总体指标均未达到统计显著，但财务分析师到基金经理、航空运营经理到运营总监等案例出现了方向一致的女性不利差异。当前结果是同一模型生成并裁判、每对只运行一次的探索性pilot，适合发现案例，不作为模型存在或不存在性别偏见的最终结论。",
-    "github": "https://github.com/3099404236/gender-swapped-career-benchmark",
-    "discussion": "",
-    "versions": [
-      {
-        "label": "v0.1",
-        "date": "2026-07",
-        "note": "首个公开版本：包含完整代码、30对提示、60份回答、盲评记录和三页PDF报告。",
-        "pdf": "papers/gender-swapped-career-benchmark-v0.1.pdf",
-        "slides": "",
-        "release": "",
-        "doi": ""
-      }
-    ]
-  },
-  {
-    "slug": "example-llm-conversation-stance",
-    "category": "research",
-    "kind": "研究笔记",
-    "title": "大模型对话姿态的探索性测量",
-    "authors": ["3099404236"],
-    "date": "2026-07",
-    "summary": "这是一个用于测试发布流程的轻量研究笔记示例。项目把代码、PDF 和可选讨论入口放在一起，DOI 和幻灯片则只作为阶段性成果的可选项。",
-    "abstract": "这个示例用于演示轻量研究笔记的发布工作流。真正使用时，把这里替换成具体项目的标题、摘要、PDF、代码和版本记录即可。研究类项目如果有 PDF，详情页会自动写入 Google Scholar 友好的 citation metadata；工具和应用类项目则不必强行伪装成论文。",
-    "github": "https://github.com/3099404236/research-note-template",
-    "discussion": "https://github.com/3099404236/research-note-template/discussions",
-    "versions": [
-      {
-        "label": "v0.1",
-        "date": "2026-07",
-        "note": "发布流程演示：包含一份简单 PDF 报告。",
-        "pdf": "papers/example-llm-conversation-stance.pdf",
-        "slides": "",
-        "release": "",
-        "doi": ""
-      }
-    ]
-  },
-  {
-    "slug": "agent-recommender-system",
-    "category": "applications",
-    "kind": "产品原型",
-    "title": "基于需求匹配的亲子游戏 Agent 推荐系统",
-    "authors": ["3099404236"],
-    "date": "2026-07",
-    "summary": "通过三道情景题和固定计分规则识别家长当前最关注的处理方向，推荐一个主 Agent 和一个备选 Agent。",
-    "abstract": "亲子游戏管理可能对应规则执行、共同协商、关系修复、作息观察或现实风险。本项目用三道情景题和固定计分规则输出可解释的主推荐、备选推荐与安全提醒；当前实现为可离线运行的静态网页，不依赖爬虫、训练、数据库或推荐阶段的模型调用。",
-    "github": "",
-    "discussion": "",
-    "versions": [
-      {
-        "label": "v0.1",
-        "date": "2026-07",
-        "note": "首个公开版本：包含离线问卷、5 个 Agent 配置、固定规则推荐、验证结果和六页 PDF 项目报告。",
-        "pdf": "papers/agent-recommender-system-v0.1.pdf",
-        "slides": "",
-        "demo": "",
-        "release": "",
-        "doi": ""
-      }
-    ]
-  }
+    {
+        "slug":  "a-share-institutional-behavior",
+        "category":  "research",
+        "kind":  "实证量化研究",
+        "title":  "A股“主力吸筹”叙事的实证检验：机构持仓、处罚案例与可交易性",
+        "authors":  [
+                        "Junxiang Zeng"
+                    ],
+        "date":  "2026-07",
+        "summary":  "使用2015至2025年历史全市场机构持仓、日线行情和证监会处罚案例，检验“低波动横盘、缩量吸筹、温和放量拉升”叙事，并在公告日、可成交性、交易成本和样本外约束下测试其可交易性。",
+        "abstract":  "本研究从持仓真相和官方处罚记录倒推量价行为，而不是先按K线猜测主力。样本包含44个季度、5,453个历史A股代码、162,791个相邻季度机构持仓变化、28个操纵窗口和17,361个纯价量信号。机构增持最高组相对最低组的当季收益均值为7.75%，但成交额斜率没有稳健增加；16个可配对处罚周期的出货期成交额约高175.2%。公告后机构信号与纯价量信号在扣除35bp往返成本后均未形成稳健的正alpha，2023至2025留出期结论也不支持可投入实盘的“主力战法”。",
+        "github":  "https://github.com/3099404236/a-share-institutional-behavior",
+        "discussion":  "",
+        "versions":  [
+                         {
+                             "label":  "v1.0",
+                             "date":  "2026-07",
+                             "note":  "首个正式版本：包含完整研究代码、历史股票池、处罚案例登记、聚合结果、九页PDF报告和复现说明。",
+                             "pdf":  "papers/a-share-institutional-behavior.pdf",
+                             "slides":  "",
+                             "release":  "",
+                             "doi":  ""
+                         }
+                     ]
+    },
+    {
+        "slug":  "csi300-distribution-forecast",
+        "category":  "research",
+        "kind":  "量化研究笔记",
+        "title":  "沪深300历史成分股下的收益分布预测与交易检验",
+        "authors":  [
+                        "Junxiang Zeng"
+                    ],
+        "date":  "2026-07",
+        "summary":  "使用历史时点沪深300成分股比较QRNN、EWMA、GARCH和历史分布，并检验预测偏度多空策略。QRNN的CRPS略优于基线，但策略在10个基点成本后亏损。",
+        "abstract":  "本项目基于596只历史成分股构建point-in-time面板，在2023至2025年测试期比较未来5日收益分布预测。QRNN在216,046个统一样本上的CRPS为0.026791，较EWMA改善约0.83%。收盘后生成信号并在下一日开盘执行的偏度多空策略，毛收益年化均值为1.76%，加入10个基点调仓成本后为-3.24%；毛收益检验p值为0.774。结果支持分布预测存在轻微增益，但不支持策略具有可交易的盈利能力。",
+        "github":  "https://github.com/3099404236/csi300-distribution-forecast",
+        "discussion":  "",
+        "versions":  [
+                         {
+                             "label":  "v0.1",
+                             "date":  "2026-07",
+                             "note":  "首个公开版本：包含完整代码、历史成分口径、聚合结果和四页PDF报告。",
+                             "pdf":  "papers/csi300-distribution-forecast.pdf",
+                             "slides":  "",
+                             "release":  "",
+                             "doi":  ""
+                         }
+                     ]
+    },
+    {
+        "slug":  "gender-swapped-career-benchmark",
+        "category":  "research",
+        "kind":  "探索性研究",
+        "title":  "性别交换职业评估中的大模型差异",
+        "authors":  [
+                        "3099404236"
+                    ],
+        "date":  "2026-07",
+        "summary":  "使用30对仅替换姓名与性别的职业档案，比较大模型在整体前景、职业天花板和限制性建议上的输出差异。",
+        "abstract":  "本项目构造覆盖30个行业与岗位转型场景的性别交换职业档案，生成60份独立职业评估，再经匿名化后进行随机A/B盲评。三个总体指标均未达到统计显著，但财务分析师到基金经理、航空运营经理到运营总监等案例出现了方向一致的女性不利差异。当前结果是同一模型生成并裁判、每对只运行一次的探索性pilot，适合发现案例，不作为模型存在或不存在性别偏见的最终结论。",
+        "github":  "https://github.com/3099404236/gender-swapped-career-benchmark",
+        "discussion":  "",
+        "versions":  [
+                         {
+                             "label":  "v0.1",
+                             "date":  "2026-07",
+                             "note":  "首个公开版本：包含完整代码、30对提示、60份回答、盲评记录和三页PDF报告。",
+                             "pdf":  "papers/gender-swapped-career-benchmark-v0.1.pdf",
+                             "slides":  "",
+                             "release":  "",
+                             "doi":  ""
+                         }
+                     ]
+    },
+    {
+        "slug":  "example-llm-conversation-stance",
+        "category":  "research",
+        "kind":  "研究笔记",
+        "title":  "大模型对话姿态的探索性测量",
+        "authors":  [
+                        "3099404236"
+                    ],
+        "date":  "2026-07",
+        "summary":  "这是一个用于测试发布流程的轻量研究笔记示例。项目把代码、PDF 和可选讨论入口放在一起，DOI 和幻灯片则只作为阶段性成果的可选项。",
+        "abstract":  "这个示例用于演示轻量研究笔记的发布工作流。真正使用时，把这里替换成具体项目的标题、摘要、PDF、代码和版本记录即可。研究类项目如果有 PDF，详情页会自动写入 Google Scholar 友好的 citation metadata；工具和应用类项目则不必强行伪装成论文。",
+        "github":  "https://github.com/3099404236/research-note-template",
+        "discussion":  "https://github.com/3099404236/research-note-template/discussions",
+        "versions":  [
+                         {
+                             "label":  "v0.1",
+                             "date":  "2026-07",
+                             "note":  "发布流程演示：包含一份简单 PDF 报告。",
+                             "pdf":  "papers/example-llm-conversation-stance.pdf",
+                             "slides":  "",
+                             "release":  "",
+                             "doi":  ""
+                         }
+                     ]
+    },
+    {
+        "slug":  "agent-recommender-system",
+        "category":  "applications",
+        "kind":  "产品原型",
+        "title":  "基于需求匹配的亲子游戏 Agent 推荐系统",
+        "authors":  [
+                        "3099404236"
+                    ],
+        "date":  "2026-07",
+        "summary":  "通过三道情景题和固定计分规则识别家长当前最关注的处理方向，推荐一个主 Agent 和一个备选 Agent。",
+        "abstract":  "亲子游戏管理可能对应规则执行、共同协商、关系修复、作息观察或现实风险。本项目用三道情景题和固定计分规则输出可解释的主推荐、备选推荐与安全提醒；当前实现为可离线运行的静态网页，不依赖爬虫、训练、数据库或推荐阶段的模型调用。",
+        "github":  "https://github.com/3099404236/agent-recommender-system",
+        "discussion":  "",
+        "versions":  [
+                         {
+                             "label":  "v0.1",
+                             "date":  "2026-07",
+                             "note":  "首个公开版本：包含离线问卷、5 个 Agent 配置、固定规则推荐、验证结果和六页 PDF 项目报告。",
+                             "pdf":  "papers/agent-recommender-system-v0.1.pdf",
+                             "slides":  "",
+                             "demo":  "",
+                             "release":  "",
+                             "doi":  ""
+                         }
+                     ]
+    }
 ]
