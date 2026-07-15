@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EvolveGCN 论文谱系、代码增量与文本对应审计</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <meta name="citation_title" content="EvolveGCN 论文谱系、代码增量与文本对应审计">
+  <meta name="citation_author" content="Junxiang Zeng">
+  <meta name="citation_publication_date" content="2026/07">
+  <meta name="citation_pdf_url" content="https://3099404236.github.io/papers/evolvegcn-code-lineage-audit-v2.0.pdf">
+  <meta name="citation_abstract" content="本项目构建一个从论文 PDF、引用谱系、历史仓库锁定到代码语义对比和论文逐段审计的可复现流程。阶段一确认 EvolveGCN 的关键增量是把跨时间递归状态从依赖节点数的节点表示改为只依赖特征维度的 GCN 权重矩阵，并核对 H 版 TopK 适配与 O 版论文/代码不一致。阶段二分析 4 个代码库对应的 5 篇论文，共计 274 个正文自然段和 23,151 个英文词，其中核心创新为 52 段、4,197 词，占 18.1%。">
+</head>
+<body>
+  <main class="page">
+    <nav><div class="links"><a href="../publications.html">项目列表</a></div></nav>
+    <article>
+      <p class="eyebrow">代码审计研究笔记</p>
+      <h1>EvolveGCN 论文谱系、代码增量与文本对应审计</h1>
+      <div class="meta">Junxiang Zeng · 2026-07</div>
+      <h2>摘要</h2><p>本项目构建一个从论文 PDF、引用谱系、历史仓库锁定到代码语义对比和论文逐段审计的可复现流程。阶段一确认 EvolveGCN 的关键增量是把跨时间递归状态从依赖节点数的节点表示改为只依赖特征维度的 GCN 权重矩阵，并核对 H 版 TopK 适配与 O 版论文/代码不一致。阶段二分析 4 个代码库对应的 5 篇论文，共计 274 个正文自然段和 23,151 个英文词，其中核心创新为 52 段、4,197 词，占 18.1%。</p>
+      <div class="links"><a href="../papers/evolvegcn-code-lineage-audit-v2.0.pdf">PDF</a>
+<a href="https://github.com/3099404236/evolvegcn-code-lineage-audit">GitHub</a></div>
+      <h2>版本记录</h2>
+      <ol class="timeline detail-timeline">
+        <li>
+          <div class="version-head">
+            <strong>v1.0</strong>
+            <span>2026-07</span>
+          </div>
+          <p>阶段一：论文谱系、历史仓库锁定与代码级技术增量。</p>
+          <div class="links"><a href="../papers/evolvegcn-code-lineage-audit-v1.0.pdf">PDF</a></div>
+        </li>
+        <li>
+          <div class="version-head">
+            <strong>v2.0</strong>
+            <span>2026-07</span>
+          </div>
+          <p>完整保留阶段一，并追加五篇论文逐段文本与代码对应分析。</p>
+          <div class="links"><a href="../papers/evolvegcn-code-lineage-audit-v2.0.pdf">PDF</a></div>
+        </li>
+      </ol>
+    </article>
+  </main>
+</body>
+</html>

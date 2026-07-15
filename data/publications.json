@@ -160,5 +160,41 @@
                              "doi":  ""
                          }
                      ]
+    },
+    {
+        "slug":  "evolvegcn-code-lineage-audit",
+        "category":  "research",
+        "kind":  "代码审计研究笔记",
+        "title":  "EvolveGCN 论文谱系、代码增量与文本对应审计",
+        "authors":  [
+                        "Junxiang Zeng"
+                    ],
+        "date":  "2026-07",
+        "summary":  "沿 GCN、GCRN、EvolveGCN 与 DynamicGEM 的代码谱系定位真实算法增量，并逐段统计五篇论文中核心创新、代码实现、理论动机和非代码文本的篇幅。",
+        "abstract":  "本项目构建一个从论文 PDF、引用谱系、历史仓库锁定到代码语义对比和论文逐段审计的可复现流程。阶段一确认 EvolveGCN 的关键增量是把跨时间递归状态从依赖节点数的节点表示改为只依赖特征维度的 GCN 权重矩阵，并核对 H 版 TopK 适配与 O 版论文/代码不一致。阶段二分析 4 个代码库对应的 5 篇论文，共计 274 个正文自然段和 23,151 个英文词，其中核心创新为 52 段、4,197 词，占 18.1%。",
+        "github":  "https://github.com/3099404236/evolvegcn-code-lineage-audit",
+        "discussion":  "",
+        "versions":  [
+                         {
+                             "label":  "v1.0",
+                             "date":  "2026-07",
+                             "note":  "阶段一：论文谱系、历史仓库锁定与代码级技术增量。",
+                             "pdf":  "papers/evolvegcn-code-lineage-audit-v1.0.pdf",
+                             "slides":  "",
+                             "demo":  "",
+                             "release":  "",
+                             "doi":  ""
+                         },
+                         {
+                             "label":  "v2.0",
+                             "date":  "2026-07",
+                             "note":  "完整保留阶段一，并追加五篇论文逐段文本与代码对应分析。",
+                             "pdf":  "papers/evolvegcn-code-lineage-audit-v2.0.pdf",
+                             "slides":  "",
+                             "demo":  "",
+                             "release":  "",
+                             "doi":  ""
+                         }
+                     ]
     }
 ]
