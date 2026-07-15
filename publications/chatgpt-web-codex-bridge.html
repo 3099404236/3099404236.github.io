@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChatGPT 网页到 Codex 的 Responses API 实验桥接器</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav><div class="links"><a href="../publications.html">项目列表</a></div></nav>
+    <article>
+      <p class="eyebrow">开发工具</p>
+      <h1>ChatGPT 网页到 Codex 的 Responses API 实验桥接器</h1>
+      <div class="meta">3099404236 · 2026-07</div>
+      <h2>摘要</h2><p>这是一个面向短期实验的 Windows 本地桥接器。它接收 Codex 的 Responses API 请求，通过可见浏览器复用已登录的 ChatGPT 网页对话，再把网页回答转换为文本、函数调用或原生 apply_patch 事件。项目重点处理同一任务的对话复用、工具输出续轮、SSE 事件、错误重试、补丁后备路径和敏感登录数据隔离；它不绕过验证码、用量限制或网站风控。</p>
+      <div class="links"><a href="../papers/chatgpt-web-codex-bridge-v0.1.pdf">PDF</a>
+<a href="https://github.com/3099404236/chatgpt-web-codex-bridge">GitHub</a></div>
+      <h2>版本记录</h2>
+      <ol class="timeline detail-timeline">
+        <li>
+          <div class="version-head">
+            <strong>v0.1</strong>
+            <span>2026-07</span>
+          </div>
+          <p>首个公开实验版本：支持同对话续轮、SSE、shell_command、apply_patch 和自动补丁后备。</p>
+          <div class="links"><a href="../papers/chatgpt-web-codex-bridge-v0.1.pdf">PDF</a></div>
+        </li>
+      </ol>
+    </article>
+  </main>
+</body>
+</html>

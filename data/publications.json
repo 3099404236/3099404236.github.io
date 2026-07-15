@@ -134,5 +134,31 @@
                              "doi":  ""
                          }
                      ]
+    },
+    {
+        "slug":  "chatgpt-web-codex-bridge",
+        "category":  "tools",
+        "kind":  "开发工具",
+        "title":  "ChatGPT 网页到 Codex 的 Responses API 实验桥接器",
+        "authors":  [
+                        "3099404236"
+                    ],
+        "date":  "2026-07",
+        "summary":  "把已登录的 ChatGPT 网页临时封装成 Codex 可调用的本地 Responses API，并保留多轮工具循环。",
+        "abstract":  "这是一个面向短期实验的 Windows 本地桥接器。它接收 Codex 的 Responses API 请求，通过可见浏览器复用已登录的 ChatGPT 网页对话，再把网页回答转换为文本、函数调用或原生 apply_patch 事件。项目重点处理同一任务的对话复用、工具输出续轮、SSE 事件、错误重试、补丁后备路径和敏感登录数据隔离；它不绕过验证码、用量限制或网站风控。",
+        "github":  "https://github.com/3099404236/chatgpt-web-codex-bridge",
+        "discussion":  "",
+        "versions":  [
+                         {
+                             "label":  "v0.1",
+                             "date":  "2026-07",
+                             "note":  "首个公开实验版本：支持同对话续轮、SSE、shell_command、apply_patch 和自动补丁后备。",
+                             "pdf":  "papers/chatgpt-web-codex-bridge-v0.1.pdf",
+                             "slides":  "",
+                             "demo":  "",
+                             "release":  "",
+                             "doi":  ""
+                         }
+                     ]
     }
 ]
