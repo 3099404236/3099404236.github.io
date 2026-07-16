@@ -1,5 +1,31 @@
 [
     {
+        "slug":  "chatgpt-gbox-reference-kit",
+        "category":  "research",
+        "kind":  "系统兼容性研究笔记",
+        "title":  "无原生 GMS Android 手机上运行官方 ChatGPT：实机诊断与 GBox 路线",
+        "authors":  [
+                        "3099404236"
+                    ],
+        "date":  "2026-07",
+        "summary":  "从误判 HarmonyOS 到确认 Android 12，使用只读 Binder 探针定位 Google Play Licensing 与 Play Integrity 阻塞，并验证 GBox 内 Play 商店安装官方 ChatGPT 的可行边界。",
+        "abstract":  "本项目记录一台无原生完整 GMS 的 Android 12 手机运行官方 ChatGPT 的完整诊断过程。静态依赖、运行日志和原创只读探针共同表明，原生侧载的第一道硬阻塞来自 Google Play 许可证服务，Play Integrity 也参与关键路径，而 FCM 缺失并非首要门槛。实验没有 root、刷机、修改官方 APK、伪造许可证或 Integrity token，最终通过 GBox 内置 Google Play 环境安装 OpenAI 发布的官方 ChatGPT，并成功进入登录界面。公开包包含原创探针源码、脱敏服务矩阵、13 页 PDF、复现脚本和隐私边界。",
+        "github":  "https://github.com/3099404236/chatgpt-gbox-reference-kit",
+        "discussion":  "",
+        "versions":  [
+                         {
+                             "label":  "v0.1",
+                             "date":  "2026-07",
+                             "note":  "首个公开版本：包含只读 GMS/Google Play 兼容探针、脱敏实验结果、13 页中文报告和公开包审计脚本。",
+                             "pdf":  "papers/chatgpt-gbox-reference-kit-v0.1.pdf",
+                             "slides":  "",
+                             "demo":  "",
+                             "release":  "",
+                             "doi":  ""
+                         }
+                     ]
+    },
+    {
         "slug":  "a-share-institutional-behavior",
         "category":  "research",
         "kind":  "实证量化研究",
