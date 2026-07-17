@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A股四指数 PE 温度计</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav><div class="links"><a href="../publications.html">项目列表</a></div></nav>
+    <article>
+      <p class="eyebrow">量化研究仪表盘</p>
+      <h1>A股四指数 PE 温度计</h1>
+      <div class="meta">3099404236 · 2026-07</div>
+      <h2>摘要</h2><p>本项目从一个五指数、多来源抓取、固定阈值并硬编码命中率的估值页面，重构为可复现的四指数研究仪表盘。数据统一来自中证指数有限公司官方历史行情接口；回测只使用月末 PE，每个时点仅用当时已知数据计算至少五年历史的扩展窗口 P25，连续低估区去重并设置六个月冷却期。官方数据覆盖期内仅出现2024年1月一个独立事件：四指数等权组合12个月收益18.93%，24个月收益54.10%，最大回撤-17.03%；由于 N=1，项目明确不把100%命中率解释为稳定策略。仓库包含官方快照、逐月审计、事件明细、测试、网页和16页中文项目报告。</p>
+      <div class="links"><a href="../papers/a-share-pe-thermometer-v1.0.pdf">PDF</a>
+<a href="https://pethermometersite.vercel.app">演示</a>
+<a href="https://github.com/3099404236/a-share-pe-thermometer">GitHub</a></div>
+      <h2>版本记录</h2>
+      <ol class="timeline detail-timeline">
+        <li>
+          <div class="version-head">
+            <strong>v1.0</strong>
+            <span>2026-07</span>
+          </div>
+          <p>首个可复现公开版本：统一官方四指数 PE，新增严格月末回测、逐笔事件、动态网页结果和16页中文项目全程报告。</p>
+          <div class="links"><a href="../papers/a-share-pe-thermometer-v1.0.pdf">PDF</a>
+<a href="https://pethermometersite.vercel.app">演示</a></div>
+        </li>
+      </ol>
+    </article>
+  </main>
+</body>
+</html>
