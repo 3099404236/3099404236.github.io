@@ -248,5 +248,31 @@
                              "doi":  ""
                          }
                      ]
+    },
+    {
+        "slug":  "a-share-individual-stock-valuation",
+        "category":  "research",
+        "kind":  "实证量化研究",
+        "title":  "A股个股估值、持有期限与深亏恢复路径",
+        "authors":  [
+                        "Junxiang Zeng"
+                    ],
+        "date":  "2026-07",
+        "summary":  "从真实单股事件出发，检验长期亏约3%的说法、PE/PB高低估值、组合分散化以及深亏后的回本路径。",
+        "abstract":  "基于883,595条A股月末记录和21,831笔互不重叠的低估值单股事件，研究固定持有期终值、个股自身PE/PB分位、1至50只组合的分散化，以及跌破30%或50%后的曾经回本与期末盈利。结果不支持单股长期收益收敛到约-3%的字面命题；低估值样本长期优于高估值样本，但仍可能经历深亏；从1只增加到5只带来的尾部风险下降最大。",
+        "github":  "https://github.com/3099404236/a-share-individual-stock-valuation",
+        "discussion":  "",
+        "versions":  [
+                         {
+                             "label":  "v1.0",
+                             "date":  "2026-07",
+                             "note":  "首个公开版本：完整个股研究、逐笔路径审计、代码与可复核结果。",
+                             "pdf":  "papers/a-share-individual-stock-valuation-v1.0.pdf",
+                             "slides":  "",
+                             "demo":  "",
+                             "release":  "",
+                             "doi":  ""
+                         }
+                     ]
     }
 ]
