@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>基于 FPGA 的四旋翼飞控硬件在环仿真</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav><div class="links"><a href="../publications.html">项目列表</a></div></nav>
+    <article>
+      <p class="eyebrow">FPGA 硬件在环原型</p>
+      <h1>基于 FPGA 的四旋翼飞控硬件在环仿真</h1>
+      <div class="meta">3099404236 · 2026-07</div>
+      <h2>摘要</h2><p>本项目实现了一套面向达芬奇 A7 XC7A35T 的四旋翼飞控硬件在环原型。电脑端负责刚体动力学、带噪声和延迟的传感器模型及状态估计；FPGA 上的 MicroBlaze/FreeRTOS 使用 Q12 定点数执行 100 Hz PID 并返回四路电机推力。系统完成了二进制协议、CRC16、超时保护、积分抗饱和、阵风恢复和持续外力抑制验证。15 秒阵风测试实现 1450/1450 次请求成功且零超时，持续 4 N 外力 40 秒后的 X 方向误差约为 0.13 m。</p>
+      <div class="links"><a href="../papers/fpga-quadcopter-hil-v0.1.pdf">PDF</a>
+<a href="https://github.com/3099404236/fpga-quadcopter-hil">GitHub</a></div>
+      <h2>版本记录</h2>
+      <ol class="timeline detail-timeline">
+        <li>
+          <div class="version-head">
+            <strong>v0.1</strong>
+            <span>2026-07</span>
+          </div>
+          <p>首个公开版本：完成 PC 仿真、FPGA 定点 PID、HIL 通信、阵风和持续外力验证。</p>
+          <div class="links"><a href="../papers/fpga-quadcopter-hil-v0.1.pdf">PDF</a></div>
+        </li>
+      </ol>
+    </article>
+  </main>
+</body>
+</html>

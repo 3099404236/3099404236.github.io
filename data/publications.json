@@ -274,5 +274,31 @@
                              "doi":  ""
                          }
                      ]
+    },
+    {
+        "slug":  "fpga-quadcopter-hil",
+        "category":  "applications",
+        "kind":  "FPGA 硬件在环原型",
+        "title":  "基于 FPGA 的四旋翼飞控硬件在环仿真",
+        "authors":  [
+                        "3099404236"
+                    ],
+        "date":  "2026-07",
+        "summary":  "在 XC7A35T 的 MicroBlaze/FreeRTOS 上运行 100 Hz 定点 PID，并通过 PyBullet、非理想传感器与 UART 构成可复现的四旋翼 HIL 闭环。",
+        "abstract":  "本项目实现了一套面向达芬奇 A7 XC7A35T 的四旋翼飞控硬件在环原型。电脑端负责刚体动力学、带噪声和延迟的传感器模型及状态估计；FPGA 上的 MicroBlaze/FreeRTOS 使用 Q12 定点数执行 100 Hz PID 并返回四路电机推力。系统完成了二进制协议、CRC16、超时保护、积分抗饱和、阵风恢复和持续外力抑制验证。15 秒阵风测试实现 1450/1450 次请求成功且零超时，持续 4 N 外力 40 秒后的 X 方向误差约为 0.13 m。",
+        "github":  "https://github.com/3099404236/fpga-quadcopter-hil",
+        "discussion":  "",
+        "versions":  [
+                         {
+                             "label":  "v0.1",
+                             "date":  "2026-07",
+                             "note":  "首个公开版本：完成 PC 仿真、FPGA 定点 PID、HIL 通信、阵风和持续外力验证。",
+                             "pdf":  "papers/fpga-quadcopter-hil-v0.1.pdf",
+                             "slides":  "",
+                             "demo":  "",
+                             "release":  "",
+                             "doi":  ""
+                         }
+                     ]
     }
 ]
