@@ -28,9 +28,9 @@
         <span class="project-toggle">详情</span>
       </summary>
       <div class="project-body">
-        <p>从误判 HarmonyOS 到确认 Android 12，使用只读 Binder 探针定位 Google Play Licensing 与 Play Integrity 阻塞，并验证 GBox 内 Play 商店安装官方 ChatGPT 的可行边界。</p>
+        <p>从 Android 12 原生侧载的 Licensing/Integrity 阻塞，到 GBox 内官方 ChatGPT 运行，再到 Codex Remote 动态 ML Kit 扫码与跨容器登记边界的两阶段实机记录。</p>
         <div class="links"><a href="publications/chatgpt-gbox-reference-kit.html">项目页</a>
-<a href="papers/chatgpt-gbox-reference-kit-v0.1.pdf">PDF</a>
+<a href="papers/chatgpt-gbox-reference-kit-v0.2.pdf">PDF</a>
 <a href="https://github.com/3099404236/chatgpt-gbox-reference-kit">GitHub</a></div>
         <h3>版本记录</h3>
         <ol class="timeline">
@@ -41,6 +41,14 @@
           </div>
           <p>首个公开版本：包含只读 GMS/Google Play 兼容探针、脱敏实验结果、13 页中文报告和公开包审计脚本。</p>
           <div class="links"><a href="papers/chatgpt-gbox-reference-kit-v0.1.pdf">PDF</a></div>
+        </li>
+        <li>
+          <div class="version-head">
+            <strong>v0.2</strong>
+            <span>2026-07</span>
+          </div>
+          <p>第二版：定位 GBox 内 ChatGPT 动态 ML Kit 条码模块缺失，发布无 GMS 的 Camera2 + ZXing 扫码桥接源码，并记录扫码成功后 Remote 最终登记仍未完成的边界。</p>
+          <div class="links"><a href="papers/chatgpt-gbox-reference-kit-v0.2.pdf">PDF</a></div>
         </li>
         </ol>
       </div>
