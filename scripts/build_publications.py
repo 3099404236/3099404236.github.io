@@ -169,7 +169,7 @@ def render_project_summary(item):
     versions = "\n".join(render_version(version) for version in item.get("versions", []))
     detail_path = f"publications/{item['slug']}.html"
     open_attr = " open" if item.get("category") == "research" else ""
-    return f"""    <details class="project"{open_attr}>
+    return f"""    <details class="project" data-project-state="{esc(item['slug'])}"{open_attr}>
       <summary>
         <span class="project-main">
           <span class="project-title">{esc(item["title"])}</span>
@@ -254,7 +254,9 @@ def build():
       <p>这里放研究笔记、工具和应用 Demo。每个项目都可以展开查看版本、PDF、代码，以及可选的 DOI、幻灯片或讨论链接。</p>
     </header>
     <nav><a href="index.html">首页</a><a href="#research">研究</a><a href="#tools">工具</a><a href="#applications">应用</a><a href="https://github.com/3099404236">GitHub</a></nav>
-""" + "\n".join(sections)
+""" + "\n".join(sections) + """
+    <script src="assets/project-state.js" defer></script>
+"""
     (ROOT / "publications.html").write_text(root_page_shell("项目", publications_body), encoding="utf-8")
 
 

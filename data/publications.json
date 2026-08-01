@@ -324,6 +324,16 @@
                              "demo":  "",
                              "release":  "",
                              "doi":  ""
+                         },
+                         {
+                             "label":  "v0.2.0",
+                             "date":  "2026-08-02",
+                             "note":  "扩展工程报告：补充 WorkBuddy 故障时间线、九类真实事故、量化性能对比、超时链、监控与恢复设计。",
+                             "pdf":  "papers/termux-multimodel-qq-bot-v0.2.0.pdf",
+                             "slides":  "",
+                             "demo":  "",
+                             "release":  "",
+                             "doi":  ""
                          }
                      ]
     }
