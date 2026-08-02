@@ -336,5 +336,31 @@
                              "doi":  ""
                          }
                      ]
+    },
+    {
+        "slug":  "progress-radar",
+        "category":  "applications",
+        "kind":  "桌面应用",
+        "title":  "ProgressRadar：本地优先的个人进度雷达与复盘系统",
+        "authors":  [
+                        "3099404236"
+                    ],
+        "date":  "2026-08",
+        "summary":  "把零散记录转化为可追踪进展，并用阶段、周期、成就、任务与灵感视图支持长期复盘的本地桌面应用。",
+        "abstract":  "ProgressRadar 是一个本地优先的个人项目进度系统。它通过桌面快速粘贴与 AI 结构化归类，把非线性的日常记录组织为阶段、周期、时间线和成就；v2.1 新增锦囊任务板、灵犀阁、个人主页增量扫描，以及带 DPAPI 密钥保护、Windows 计划任务、状态网页和双色悬浮球的私人 GitHub 完整备份流程。",
+        "github":  "https://github.com/3099404236/progress-radar",
+        "discussion":  "",
+        "versions":  [
+                         {
+                             "label":  "v2.1",
+                             "date":  "2026-08",
+                             "note":  "新增锦囊任务板、灵犀阁、个人主页扫描与可监控的私有完整备份。",
+                             "pdf":  "papers/progress-radar-v2.1.pdf",
+                             "slides":  "",
+                             "demo":  "",
+                             "release":  "",
+                             "doi":  ""
+                         }
+                     ]
     }
 ]
