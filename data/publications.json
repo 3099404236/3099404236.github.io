@@ -362,5 +362,31 @@
                              "doi":  ""
                          }
                      ]
+    },
+    {
+        "slug":  "holmes-voice-qq-bridge",
+        "category":  "applications",
+        "kind":  "免触控语音消息系统",
+        "title":  "福尔摩斯：双手机免触控语音转 QQ 消息系统",
+        "authors":  [
+                        "3099404236"
+                    ],
+        "date":  "2026-08",
+        "summary":  "以离线唤醒词、华为输入法桥接、双阶段确认和跨手机 outbox 实现免触控语音转 QQ 消息。",
+        "abstract":  "本项目把离线关键词检测、个人语音校验、Android 无障碍输入法桥接、待确认状态机、跨手机可靠队列和 AstrBot QQ 投递组合成一条免触控语音消息链路。工程报告记录原生 Sound Trigger 审计、误发送事故、安全修复、华为后台限制、网络诊断、延迟测量与隐私边界。",
+        "github":  "https://github.com/3099404236/holmes-voice-qq-bridge",
+        "discussion":  "",
+        "versions":  [
+                         {
+                             "label":  "v1.0",
+                             "date":  "2026-08",
+                             "note":  "首个脱敏公开版本，包含代码、测试和完整工程报告。",
+                             "pdf":  "papers/holmes-voice-qq-bridge-v1.0.pdf",
+                             "slides":  "",
+                             "demo":  "",
+                             "release":  "",
+                             "doi":  ""
+                         }
+                     ]
     }
 ]
