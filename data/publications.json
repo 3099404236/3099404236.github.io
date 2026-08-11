@@ -188,32 +188,6 @@
                      ]
     },
     {
-        "slug":  "chatgpt-web-codex-bridge",
-        "category":  "tools",
-        "kind":  "开发工具",
-        "title":  "ChatGPT 网页到 Codex 的 Responses API 实验桥接器",
-        "authors":  [
-                        "3099404236"
-                    ],
-        "date":  "2026-07",
-        "summary":  "把已登录的 ChatGPT 网页临时封装成 Codex 可调用的本地 Responses API，并保留多轮工具循环。",
-        "abstract":  "这是一个面向短期实验的 Windows 本地桥接器。它接收 Codex 的 Responses API 请求，通过可见浏览器复用已登录的 ChatGPT 网页对话，再把网页回答转换为文本、函数调用或原生 apply_patch 事件。项目重点处理同一任务的对话复用、工具输出续轮、SSE 事件、错误重试、补丁后备路径和敏感登录数据隔离；它不绕过验证码、用量限制或网站风控。",
-        "github":  "https://github.com/3099404236/chatgpt-web-codex-bridge",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v0.1",
-                             "date":  "2026-07",
-                             "note":  "首个公开实验版本：支持同对话续轮、SSE、shell_command、apply_patch 和自动补丁后备。",
-                             "pdf":  "papers/chatgpt-web-codex-bridge-v0.1.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
         "slug":  "evolvegcn-code-lineage-audit",
         "category":  "research",
         "kind":  "代码审计研究笔记",
@@ -408,6 +382,42 @@
                              "date":  "2026-08",
                              "note":  "首个公开版本：包含 Windows、Android/HarmonyOS 与状态中继源码、测试和中文 PDF 报告。",
                              "pdf":  "papers/eye-rest-sync-v0.1.pdf",
+                             "slides":  "",
+                             "demo":  "",
+                             "release":  "",
+                             "doi":  ""
+                         }
+                     ]
+    },
+    {
+        "slug":  "chatgpt-web-codex-bridge",
+        "category":  "tools",
+        "kind":  "开发工具",
+        "title":  "ChatGPT 网页到 Codex 的 Responses API 实验桥接器",
+        "authors":  [
+                        "3099404236"
+                    ],
+        "date":  "2026-08",
+        "summary":  "把已登录的 ChatGPT 网页接入 Codex 工具循环，并以持久 URL、结构化检查点和同页故障恢复支持跨终端续跑。",
+        "abstract":  "这是一个面向本机实验的 Windows Agent 工作台。它接收 Codex 的 Responses API 请求，通过 Chrome DevTools MCP 或本机 Browser Relay 复用用户已经登录的 ChatGPT 标签页，再把网页回答转换为文本、函数调用或原生 apply_patch 事件。第二版新增跨重启会话 URL 映射、同页网关恢复、Thinking 中间态过滤、长文本分块、完成请求去重、对话确实失效后的结构化检查点交接、工作区任务面板、人工阶段门控和可选微任务委托。项目不绕过登录、验证码、用量限制或网站风控，也不声称等价于 OpenAI 官方 Responses API。",
+        "github":  "https://github.com/3099404236/chatgpt-web-codex-bridge",
+        "discussion":  "",
+        "versions":  [
+                         {
+                             "label":  "v0.1",
+                             "date":  "2026-07",
+                             "note":  "首个公开实验版本：支持同对话续轮、SSE、shell_command、apply_patch 和自动补丁后备。",
+                             "pdf":  "papers/chatgpt-web-codex-bridge-v0.1.pdf",
+                             "slides":  "",
+                             "demo":  "",
+                             "release":  "",
+                             "doi":  ""
+                         },
+                         {
+                             "label":  "v0.2",
+                             "date":  "2026-08",
+                             "note":  "第二版：新增已有 Chrome 标签页复用、持久会话 URL、同页故障恢复、结构化检查点、请求去重、长文本分块、可视化工作台和 52 项测试。",
+                             "pdf":  "papers/chatgpt-web-codex-bridge-v0.2.pdf",
                              "slides":  "",
                              "demo":  "",
                              "release":  "",
