@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>中文语义镜像语言 MVP</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <main class="page">
+    <nav><div class="links"><a href="../publications.html">项目列表</a></div></nav>
+    <article>
+      <p class="eyebrow">可执行语言原型</p>
+      <h1>中文语义镜像语言 MVP</h1>
+      <div class="meta">3099404236 · 2026-08</div>
+      <h2>摘要</h2><p>本项目实现一个面向 AI 时代代码审阅的中文语义镜像语言最小可行产品。原型解析一段严格中文程序，构造统一语义模型，再分别交给 Python 解释器和 C++17/GCC 后端执行，并比较退出状态、标准输出和标准错误。网页演示支持正常输入、边界输入、输入错误与语法定位。当前版本只覆盖整数序列筛选和排序，但已经验证中文程序可执行、目标代码可生成、两条路径可自动判定同对同错。</p>
+      <div class="links"><a href="../papers/chinese-semantic-mirror-v0.1.pdf">PDF</a>
+<a href="https://github.com/3099404236/chinese-semantic-mirror">GitHub</a></div>
+      <h2>版本记录</h2>
+      <ol class="timeline detail-timeline">
+        <li>
+          <div class="version-head">
+            <strong>v0.1</strong>
+            <span>2026-08</span>
+          </div>
+          <p>首个公开 MVP：包含中文 DSL、解释器、C++17 生成器、GCC 对照执行、网页演示、7 项自动测试和中文 PDF 报告。</p>
+          <div class="links"><a href="../papers/chinese-semantic-mirror-v0.1.pdf">PDF</a></div>
+        </li>
+      </ol>
+    </article>
+  </main>
+</body>
+</html>

@@ -424,5 +424,31 @@
                              "doi":  ""
                          }
                      ]
+    },
+    {
+        "slug":  "chinese-semantic-mirror",
+        "category":  "tools",
+        "kind":  "可执行语言原型",
+        "title":  "中文语义镜像语言 MVP",
+        "authors":  [
+                        "3099404236"
+                    ],
+        "date":  "2026-08",
+        "summary":  "把严格中文程序与生成的 C++ 放在同一语义模型下执行和对照，用可运行的中文投影辅助审阅 AI 生成代码。",
+        "abstract":  "本项目实现一个面向 AI 时代代码审阅的中文语义镜像语言最小可行产品。原型解析一段严格中文程序，构造统一语义模型，再分别交给 Python 解释器和 C++17/GCC 后端执行，并比较退出状态、标准输出和标准错误。网页演示支持正常输入、边界输入、输入错误与语法定位。当前版本只覆盖整数序列筛选和排序，但已经验证中文程序可执行、目标代码可生成、两条路径可自动判定同对同错。",
+        "github":  "https://github.com/3099404236/chinese-semantic-mirror",
+        "discussion":  "",
+        "versions":  [
+                         {
+                             "label":  "v0.1",
+                             "date":  "2026-08",
+                             "note":  "首个公开 MVP：包含中文 DSL、解释器、C++17 生成器、GCC 对照执行、网页演示、7 项自动测试和中文 PDF 报告。",
+                             "pdf":  "papers/chinese-semantic-mirror-v0.1.pdf",
+                             "slides":  "",
+                             "demo":  "",
+                             "release":  "",
+                             "doi":  ""
+                         }
+                     ]
     }
 ]
