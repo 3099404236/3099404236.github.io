@@ -13,8 +13,8 @@
       <p class="eyebrow">开发工具</p>
       <h1>ChatGPT 网页到 Codex 的 Responses API 实验桥接器</h1>
       <div class="meta">3099404236 · 2026-08</div>
-      <h2>摘要</h2><p>这是一个面向本机实验的 Windows Agent 工作台。它接收 Codex 的 Responses API 请求，通过 Chrome DevTools MCP 或本机 Browser Relay 复用用户已经登录的 ChatGPT 标签页，再把网页回答转换为文本、函数调用或原生 apply_patch 事件。第二版新增跨重启会话 URL 映射、同页网关恢复、Thinking 中间态过滤、长文本分块、完成请求去重、对话确实失效后的结构化检查点交接、工作区任务面板、人工阶段门控和可选微任务委托。项目不绕过登录、验证码、用量限制或网站风控，也不声称等价于 OpenAI 官方 Responses API。</p>
-      <div class="links"><a href="../papers/chatgpt-web-codex-bridge-v0.2.pdf">PDF</a>
+      <h2>摘要</h2><p>这是一个面向本机实验的 Windows Agent 工作台。它接收 Codex 的 Responses API 请求，通过 Chrome DevTools MCP 复用用户已经登录的 ChatGPT 标签页，再把网页回答转换为文本、函数调用或原生 apply_patch 事件。第三版把单页控制扩展为三条相互隔离的工作通道与一条持久旁白通道：工作通道使用会话亲和、租约代数和差异化空闲释放避免多个任务争抢同一标签页；旁白通道把已完成或失败的工作回合解释为可读进度，并在通道离线时本地排队、恢复后补放。启动器新增多次直连探测、健康 3+1 拓扑防降级，以及只匹配 Chrome 远程调试许可窗口的自动允许脚本。项目仍保留持久 URL、同页故障恢复、请求去重、长文本分块、结构化检查点和明确 Responses 终态；不绕过登录、验证码、用量限制或网站风控，也不声称等价于 OpenAI 官方 Responses API。</p>
+      <div class="links"><a href="../papers/chatgpt-web-codex-bridge-v0.3.pdf">PDF</a>
 <a href="https://github.com/3099404236/chatgpt-web-codex-bridge">GitHub</a></div>
       <h2>版本记录</h2>
       <ol class="timeline detail-timeline">
@@ -33,6 +33,14 @@
           </div>
           <p>第二版：新增已有 Chrome 标签页复用、持久会话 URL、同页故障恢复、结构化检查点、请求去重、长文本分块、可视化工作台和 52 项测试。</p>
           <div class="links"><a href="../papers/chatgpt-web-codex-bridge-v0.2.pdf">PDF</a></div>
+        </li>
+        <li>
+          <div class="version-head">
+            <strong>v0.3</strong>
+            <span>2026-08</span>
+          </div>
+          <p>第三版：新增三条粘性工作通道、一条持久旁白通道、离线队列补放、差异化租期、健康拓扑防降级、Chrome 许可精确自动点击和 91 项测试。</p>
+          <div class="links"><a href="../papers/chatgpt-web-codex-bridge-v0.3.pdf">PDF</a></div>
         </li>
       </ol>
     </article>

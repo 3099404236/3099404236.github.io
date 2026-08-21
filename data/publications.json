@@ -1,454 +1,464 @@
 [
-    {
-        "slug":  "chatgpt-gbox-reference-kit",
-        "category":  "research",
-        "kind":  "系统兼容性研究笔记",
-        "title":  "无原生 GMS Android 手机上运行官方 ChatGPT：实机诊断与 GBox 路线",
-        "authors":  [
-                        "3099404236"
-                    ],
-        "date":  "2026-07",
-        "summary":  "从误判 HarmonyOS 到确认 Android 12，使用只读 Binder 探针定位 Google Play Licensing 与 Play Integrity 阻塞，并验证 GBox 内 Play 商店安装官方 ChatGPT 的可行边界。",
-        "abstract":  "本项目记录一台无原生完整 GMS 的 Android 12 手机运行官方 ChatGPT 的完整诊断过程。静态依赖、运行日志和原创只读探针共同表明，原生侧载的第一道硬阻塞来自 Google Play 许可证服务，Play Integrity 也参与关键路径，而 FCM 缺失并非首要门槛。实验没有 root、刷机、修改官方 APK、伪造许可证或 Integrity token，最终通过 GBox 内置 Google Play 环境安装 OpenAI 发布的官方 ChatGPT，并成功进入登录界面。公开包包含原创探针源码、脱敏服务矩阵、13 页 PDF、复现脚本和隐私边界。",
-        "github":  "https://github.com/3099404236/chatgpt-gbox-reference-kit",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v0.1",
-                             "date":  "2026-07",
-                             "note":  "首个公开版本：包含只读 GMS/Google Play 兼容探针、脱敏实验结果、13 页中文报告和公开包审计脚本。",
-                             "pdf":  "papers/chatgpt-gbox-reference-kit-v0.1.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
-        "slug":  "a-share-institutional-behavior",
-        "category":  "research",
-        "kind":  "实证量化研究",
-        "title":  "A股“主力吸筹”叙事的实证检验：机构持仓、处罚案例与可交易性",
-        "authors":  [
-                        "Junxiang Zeng"
-                    ],
-        "date":  "2026-07",
-        "summary":  "使用2015至2025年历史全市场机构持仓、日线行情和证监会处罚案例，检验“低波动横盘、缩量吸筹、温和放量拉升”叙事，并在公告日、可成交性、交易成本和样本外约束下测试其可交易性。",
-        "abstract":  "本研究从持仓真相和官方处罚记录倒推量价行为，而不是先按K线猜测主力。样本包含44个季度、5,453个历史A股代码、162,791个相邻季度机构持仓变化、28个操纵窗口和17,361个纯价量信号。机构增持最高组相对最低组的当季收益均值为7.75%，但成交额斜率没有稳健增加；16个可配对处罚周期的出货期成交额约高175.2%。公告后机构信号与纯价量信号在扣除35bp往返成本后均未形成稳健的正alpha，2023至2025留出期结论也不支持可投入实盘的“主力战法”。",
-        "github":  "https://github.com/3099404236/a-share-institutional-behavior",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v1.0",
-                             "date":  "2026-07",
-                             "note":  "首个正式版本：包含完整研究代码、历史股票池、处罚案例登记、聚合结果、九页PDF报告和复现说明。",
-                             "pdf":  "papers/a-share-institutional-behavior.pdf",
-                             "slides":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
-        "slug":  "csi300-distribution-forecast",
-        "category":  "research",
-        "kind":  "量化研究笔记",
-        "title":  "沪深300历史成分股下的收益分布预测与交易检验",
-        "authors":  [
-                        "Junxiang Zeng"
-                    ],
-        "date":  "2026-07",
-        "summary":  "使用历史时点沪深300成分股比较QRNN、EWMA、GARCH和历史分布，并检验预测偏度多空策略。QRNN的CRPS略优于基线，但策略在10个基点成本后亏损。",
-        "abstract":  "本项目基于596只历史成分股构建point-in-time面板，在2023至2025年测试期比较未来5日收益分布预测。QRNN在216,046个统一样本上的CRPS为0.026791，较EWMA改善约0.83%。收盘后生成信号并在下一日开盘执行的偏度多空策略，毛收益年化均值为1.76%，加入10个基点调仓成本后为-3.24%；毛收益检验p值为0.774。结果支持分布预测存在轻微增益，但不支持策略具有可交易的盈利能力。",
-        "github":  "https://github.com/3099404236/csi300-distribution-forecast",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v0.1",
-                             "date":  "2026-07",
-                             "note":  "首个公开版本：包含完整代码、历史成分口径、聚合结果和四页PDF报告。",
-                             "pdf":  "papers/csi300-distribution-forecast.pdf",
-                             "slides":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
-        "slug":  "gender-swapped-career-benchmark",
-        "category":  "research",
-        "kind":  "探索性研究",
-        "title":  "性别交换职业评估中的大模型差异",
-        "authors":  [
-                        "3099404236"
-                    ],
-        "date":  "2026-07",
-        "summary":  "使用30对仅替换姓名与性别的职业档案，比较大模型在整体前景、职业天花板和限制性建议上的输出差异。",
-        "abstract":  "本项目构造覆盖30个行业与岗位转型场景的性别交换职业档案，生成60份独立职业评估，再经匿名化后进行随机A/B盲评。三个总体指标均未达到统计显著，但财务分析师到基金经理、航空运营经理到运营总监等案例出现了方向一致的女性不利差异。当前结果是同一模型生成并裁判、每对只运行一次的探索性pilot，适合发现案例，不作为模型存在或不存在性别偏见的最终结论。",
-        "github":  "https://github.com/3099404236/gender-swapped-career-benchmark",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v0.1",
-                             "date":  "2026-07",
-                             "note":  "首个公开版本：包含完整代码、30对提示、60份回答、盲评记录和三页PDF报告。",
-                             "pdf":  "papers/gender-swapped-career-benchmark-v0.1.pdf",
-                             "slides":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
-        "slug":  "example-llm-conversation-stance",
-        "category":  "research",
-        "kind":  "研究笔记",
-        "title":  "大模型对话姿态的探索性测量",
-        "authors":  [
-                        "3099404236"
-                    ],
-        "date":  "2026-07",
-        "summary":  "这是一个用于测试发布流程的轻量研究笔记示例。项目把代码、PDF 和可选讨论入口放在一起，DOI 和幻灯片则只作为阶段性成果的可选项。",
-        "abstract":  "这个示例用于演示轻量研究笔记的发布工作流。真正使用时，把这里替换成具体项目的标题、摘要、PDF、代码和版本记录即可。研究类项目如果有 PDF，详情页会自动写入 Google Scholar 友好的 citation metadata；工具和应用类项目则不必强行伪装成论文。",
-        "github":  "https://github.com/3099404236/research-note-template",
-        "discussion":  "https://github.com/3099404236/research-note-template/discussions",
-        "versions":  [
-                         {
-                             "label":  "v0.1",
-                             "date":  "2026-07",
-                             "note":  "发布流程演示：包含一份简单 PDF 报告。",
-                             "pdf":  "papers/example-llm-conversation-stance.pdf",
-                             "slides":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
-        "slug":  "a-share-pe-thermometer",
-        "category":  "applications",
-        "kind":  "量化研究仪表盘",
-        "title":  "A股四指数 PE 温度计",
-        "authors":  [
-                        "3099404236"
-                    ],
-        "date":  "2026-07",
-        "summary":  "使用沪深300、上证50、中证500和中证1000的官方滚动 PE，展示当前估值区间，并公开月末扩展 P25 严格回测的样本数、收益、回撤、超额和逐笔事件。",
-        "abstract":  "本项目从一个五指数、多来源抓取、固定阈值并硬编码命中率的估值页面，重构为可复现的四指数研究仪表盘。数据统一来自中证指数有限公司官方历史行情接口；回测只使用月末 PE，每个时点仅用当时已知数据计算至少五年历史的扩展窗口 P25，连续低估区去重并设置六个月冷却期。官方数据覆盖期内仅出现2024年1月一个独立事件：四指数等权组合12个月收益18.93%，24个月收益54.10%，最大回撤-17.03%；由于 N=1，项目明确不把100%命中率解释为稳定策略。仓库包含官方快照、逐月审计、事件明细、测试、网页和16页中文项目报告。",
-        "github":  "https://github.com/3099404236/a-share-pe-thermometer",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v1.0",
-                             "date":  "2026-07",
-                             "note":  "首个可复现公开版本：统一官方四指数 PE，新增严格月末回测、逐笔事件、动态网页结果和16页中文项目全程报告。",
-                             "pdf":  "papers/a-share-pe-thermometer-v1.0.pdf",
-                             "slides":  "",
-                             "demo":  "https://pethermometersite.vercel.app",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
-        "slug":  "agent-recommender-system",
-        "category":  "applications",
-        "kind":  "产品原型",
-        "title":  "基于需求匹配的亲子游戏 Agent 推荐系统",
-        "authors":  [
-                        "3099404236"
-                    ],
-        "date":  "2026-07",
-        "summary":  "通过 2-3 轮自然对话或三道情景题识别家长当前需求，再由本地确定性规则推荐主 Agent 和备选 Agent。",
-        "abstract":  "亲子游戏管理可能对应规则执行、共同协商、关系修复、作息观察或现实风险。V2 用中性追问形成临时需求画像，模型不直接决定 Agent，最终匹配、风险覆盖和紧急分流均由本地代码控制；无模型或无网络时自动回退到本地关键词和三题问卷。系统不需要爬虫、训练或数据库。",
-        "github":  "https://github.com/3099404236/agent-recommender-system",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v0.1",
-                             "date":  "2026-07",
-                             "note":  "首个公开版本：包含离线问卷、5 个 Agent 配置、固定规则推荐、验证结果和六页 PDF 项目报告。",
-                             "pdf":  "papers/agent-recommender-system-v0.1.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         },
-                         {
-                             "label":  "v0.2",
-                             "date":  "2026-07",
-                             "note":  "第二版：新增 2-3 轮对话识别、服务端临时需求画像、确定性推荐、安全分流和离线回退；保留第一版问卷。",
-                             "pdf":  "papers/agent-recommender-system-v0.2.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
-        "slug":  "evolvegcn-code-lineage-audit",
-        "category":  "research",
-        "kind":  "代码审计研究笔记",
-        "title":  "EvolveGCN 论文谱系、代码增量与文本对应审计",
-        "authors":  [
-                        "Junxiang Zeng"
-                    ],
-        "date":  "2026-07",
-        "summary":  "沿 GCN、GCRN、EvolveGCN 与 DynamicGEM 的代码谱系定位真实算法增量，并逐段统计五篇论文中核心创新、代码实现、理论动机和非代码文本的篇幅。",
-        "abstract":  "本项目构建一个从论文 PDF、引用谱系、历史仓库锁定到代码语义对比和论文逐段审计的可复现流程。阶段一确认 EvolveGCN 的关键增量是把跨时间递归状态从依赖节点数的节点表示改为只依赖特征维度的 GCN 权重矩阵，并核对 H 版 TopK 适配与 O 版论文/代码不一致。阶段二分析 4 个代码库对应的 5 篇论文，共计 274 个正文自然段和 23,151 个英文词，其中核心创新为 52 段、4,197 词，占 18.1%。",
-        "github":  "https://github.com/3099404236/evolvegcn-code-lineage-audit",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v1.0",
-                             "date":  "2026-07",
-                             "note":  "阶段一：论文谱系、历史仓库锁定与代码级技术增量。",
-                             "pdf":  "papers/evolvegcn-code-lineage-audit-v1.0.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         },
-                         {
-                             "label":  "v2.0",
-                             "date":  "2026-07",
-                             "note":  "完整保留阶段一，并追加五篇论文逐段文本与代码对应分析。",
-                             "pdf":  "papers/evolvegcn-code-lineage-audit-v2.0.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
-        "slug":  "a-share-individual-stock-valuation",
-        "category":  "research",
-        "kind":  "实证量化研究",
-        "title":  "A股个股估值、持有期限与深亏恢复路径",
-        "authors":  [
-                        "Junxiang Zeng"
-                    ],
-        "date":  "2026-07",
-        "summary":  "从真实单股事件出发，检验长期亏约3%的说法、PE/PB高低估值、组合分散化以及深亏后的回本路径。",
-        "abstract":  "基于883,595条A股月末记录和21,831笔互不重叠的低估值单股事件，研究固定持有期终值、个股自身PE/PB分位、1至50只组合的分散化，以及跌破30%或50%后的曾经回本与期末盈利。结果不支持单股长期收益收敛到约-3%的字面命题；低估值样本长期优于高估值样本，但仍可能经历深亏；从1只增加到5只带来的尾部风险下降最大。",
-        "github":  "https://github.com/3099404236/a-share-individual-stock-valuation",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v1.0",
-                             "date":  "2026-07",
-                             "note":  "首个公开版本：完整个股研究、逐笔路径审计、代码与可复核结果。",
-                             "pdf":  "papers/a-share-individual-stock-valuation-v1.0.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
-        "slug":  "fpga-quadcopter-hil",
-        "category":  "applications",
-        "kind":  "FPGA 硬件在环原型",
-        "title":  "基于 FPGA 的四旋翼飞控硬件在环仿真",
-        "authors":  [
-                        "3099404236"
-                    ],
-        "date":  "2026-07",
-        "summary":  "在 XC7A35T 的 MicroBlaze/FreeRTOS 上运行 100 Hz 定点 PID，并通过 PyBullet、非理想传感器与 UART 构成可复现的四旋翼 HIL 闭环。",
-        "abstract":  "本项目实现了一套面向达芬奇 A7 XC7A35T 的四旋翼飞控硬件在环原型。电脑端负责刚体动力学、带噪声和延迟的传感器模型及状态估计；FPGA 上的 MicroBlaze/FreeRTOS 使用 Q12 定点数执行 100 Hz PID 并返回四路电机推力。系统完成了二进制协议、CRC16、超时保护、积分抗饱和、阵风恢复和持续外力抑制验证。15 秒阵风测试实现 1450/1450 次请求成功且零超时，持续 4 N 外力 40 秒后的 X 方向误差约为 0.13 m。",
-        "github":  "https://github.com/3099404236/fpga-quadcopter-hil",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v0.1",
-                             "date":  "2026-07",
-                             "note":  "首个公开版本：完成 PC 仿真、FPGA 定点 PID、HIL 通信、阵风和持续外力验证。",
-                             "pdf":  "papers/fpga-quadcopter-hil-v0.1.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
-        "slug":  "termux-multimodel-qq-bot",
-        "category":  "applications",
-        "kind":  "应用系统",
-        "title":  "基于 Termux 的多模型 QQ 群聊机器人系统",
-        "authors":  [
-                        "3099404236"
-                    ],
-        "date":  "2026-08-01",
-        "summary":  "在 Redmi Android 手机上串联 NapCat、AstrBot、Antigravity 与 ChatGPT 网页桥的长期运行 QQ 群聊机器人。",
-        "abstract":  "该项目把 QQ 接入、群聊记忆、OpenAI 兼容路由、持久化交互式终端、显式模型选择、Exa 搜索授权、ChatGPT 网页会话、图片回传、长回复整理、延迟观测和进程守护组合成一套可在 Termux/proot Ubuntu 中运行的完整系统。公开版本源自 2026-08-01 的生产手机只读快照，并移除了账号、Cookie、API Key、聊天记录、数据库、日志和浏览器 Profile。",
-        "github":  "https://github.com/3099404236/termux-multimodel-qq-bot",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v0.1.0",
-                             "date":  "2026-08-01",
-                             "note":  "首个公开、脱敏且带 PDF 报告的完整手机端快照。",
-                             "pdf":  "papers/termux-multimodel-qq-bot-v0.1.0.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         },
-                         {
-                             "label":  "v0.2.0",
-                             "date":  "2026-08-02",
-                             "note":  "扩展工程报告：补充 WorkBuddy 故障时间线、九类真实事故、量化性能对比、超时链、监控与恢复设计。",
-                             "pdf":  "papers/termux-multimodel-qq-bot-v0.2.0.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
-        "slug":  "progress-radar",
-        "category":  "applications",
-        "kind":  "桌面应用",
-        "title":  "ProgressRadar：本地优先的个人进度雷达与复盘系统",
-        "authors":  [
-                        "3099404236"
-                    ],
-        "date":  "2026-08",
-        "summary":  "把零散记录转化为可追踪进展，并用阶段、周期、成就、任务与灵感视图支持长期复盘的本地桌面应用。",
-        "abstract":  "ProgressRadar 是一个本地优先的个人项目进度系统。它通过桌面快速粘贴与 AI 结构化归类，把非线性的日常记录组织为阶段、周期、时间线和成就；v2.1 新增锦囊任务板、灵犀阁、个人主页增量扫描，以及带 DPAPI 密钥保护、Windows 计划任务、状态网页和双色悬浮球的私人 GitHub 完整备份流程。",
-        "github":  "https://github.com/3099404236/progress-radar",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v2.1",
-                             "date":  "2026-08",
-                             "note":  "新增锦囊任务板、灵犀阁、个人主页扫描与可监控的私有完整备份。",
-                             "pdf":  "papers/progress-radar-v2.1.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
-        "slug":  "holmes-voice-qq-bridge",
-        "category":  "applications",
-        "kind":  "免触控语音消息系统",
-        "title":  "福尔摩斯：双手机免触控语音转 QQ 消息系统",
-        "authors":  [
-                        "3099404236"
-                    ],
-        "date":  "2026-08",
-        "summary":  "以离线唤醒词、华为输入法桥接、双阶段确认和跨手机 outbox 实现免触控语音转 QQ 消息。",
-        "abstract":  "本项目把离线关键词检测、个人语音校验、Android 无障碍输入法桥接、待确认状态机、跨手机可靠队列和 AstrBot QQ 投递组合成一条免触控语音消息链路。工程报告记录原生 Sound Trigger 审计、误发送事故、安全修复、华为后台限制、网络诊断、延迟测量与隐私边界。",
-        "github":  "https://github.com/3099404236/holmes-voice-qq-bridge",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v1.0",
-                             "date":  "2026-08",
-                             "note":  "首个脱敏公开版本，包含代码、测试和完整工程报告。",
-                             "pdf":  "papers/holmes-voice-qq-bridge-v1.0.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
-        "slug":  "eye-rest-sync",
-        "category":  "applications",
-        "kind":  "跨设备护眼应用",
-        "title":  "休息：Windows 与 HarmonyOS 同步离屏休息工具",
-        "authors":  [
-                        "3099404236"
-                    ],
-        "date":  "2026-08",
-        "summary":  "Windows 累计 40 分钟有效使用后覆盖全部显示器 10 分钟，并通过 HTTPS 中继让 Android/HarmonyOS 手机同步进入休息遮罩。",
-        "abstract":  "本项目实现一个跨 Windows 与 Android/HarmonyOS 的强制离屏休息系统。Windows 客户端基于 Python、Tkinter 和 Win32 API，支持空闲感知计时、多显示器遮罩、托盘控制和紧急退出；Node.js 中继采用控制/只读令牌隔离并保留带版本号的休息状态；手机端使用原生 Java 前台服务和悬浮窗，通过 HTTPS 长轮询同步黑屏。公开版本包含 12 项自动测试、双显示器验证、HarmonyOS 4.2 实机验证，以及移除 USB 本地映射后的公网端到端测试。",
-        "github":  "https://github.com/3099404236/eye-rest-sync",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v0.1",
-                             "date":  "2026-08",
-                             "note":  "首个公开版本：包含 Windows、Android/HarmonyOS 与状态中继源码、测试和中文 PDF 报告。",
-                             "pdf":  "papers/eye-rest-sync-v0.1.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
-        "slug":  "chatgpt-web-codex-bridge",
-        "category":  "tools",
-        "kind":  "开发工具",
-        "title":  "ChatGPT 网页到 Codex 的 Responses API 实验桥接器",
-        "authors":  [
-                        "3099404236"
-                    ],
-        "date":  "2026-08",
-        "summary":  "把已登录的 ChatGPT 网页接入 Codex 工具循环，并以持久 URL、结构化检查点和同页故障恢复支持跨终端续跑。",
-        "abstract":  "这是一个面向本机实验的 Windows Agent 工作台。它接收 Codex 的 Responses API 请求，通过 Chrome DevTools MCP 或本机 Browser Relay 复用用户已经登录的 ChatGPT 标签页，再把网页回答转换为文本、函数调用或原生 apply_patch 事件。第二版新增跨重启会话 URL 映射、同页网关恢复、Thinking 中间态过滤、长文本分块、完成请求去重、对话确实失效后的结构化检查点交接、工作区任务面板、人工阶段门控和可选微任务委托。项目不绕过登录、验证码、用量限制或网站风控，也不声称等价于 OpenAI 官方 Responses API。",
-        "github":  "https://github.com/3099404236/chatgpt-web-codex-bridge",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v0.1",
-                             "date":  "2026-07",
-                             "note":  "首个公开实验版本：支持同对话续轮、SSE、shell_command、apply_patch 和自动补丁后备。",
-                             "pdf":  "papers/chatgpt-web-codex-bridge-v0.1.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         },
-                         {
-                             "label":  "v0.2",
-                             "date":  "2026-08",
-                             "note":  "第二版：新增已有 Chrome 标签页复用、持久会话 URL、同页故障恢复、结构化检查点、请求去重、长文本分块、可视化工作台和 52 项测试。",
-                             "pdf":  "papers/chatgpt-web-codex-bridge-v0.2.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    },
-    {
-        "slug":  "chinese-semantic-mirror",
-        "category":  "tools",
-        "kind":  "可执行语言原型",
-        "title":  "中文语义镜像语言 MVP",
-        "authors":  [
-                        "3099404236"
-                    ],
-        "date":  "2026-08",
-        "summary":  "把严格中文程序与生成的 C++ 放在同一语义模型下执行和对照，用可运行的中文投影辅助审阅 AI 生成代码。",
-        "abstract":  "本项目实现一个面向 AI 时代代码审阅的中文语义镜像语言最小可行产品。原型解析一段严格中文程序，构造统一语义模型，再分别交给 Python 解释器和 C++17/GCC 后端执行，并比较退出状态、标准输出和标准错误。网页演示支持正常输入、边界输入、输入错误与语法定位。当前版本只覆盖整数序列筛选和排序，但已经验证中文程序可执行、目标代码可生成、两条路径可自动判定同对同错。",
-        "github":  "https://github.com/3099404236/chinese-semantic-mirror",
-        "discussion":  "",
-        "versions":  [
-                         {
-                             "label":  "v0.1",
-                             "date":  "2026-08",
-                             "note":  "首个公开 MVP：包含中文 DSL、解释器、C++17 生成器、GCC 对照执行、网页演示、7 项自动测试和中文 PDF 报告。",
-                             "pdf":  "papers/chinese-semantic-mirror-v0.1.pdf",
-                             "slides":  "",
-                             "demo":  "",
-                             "release":  "",
-                             "doi":  ""
-                         }
-                     ]
-    }
+  {
+    "slug": "chatgpt-gbox-reference-kit",
+    "category": "research",
+    "kind": "系统兼容性研究笔记",
+    "title": "无原生 GMS Android 手机上运行官方 ChatGPT：实机诊断与 GBox 路线",
+    "authors": [
+      "3099404236"
+    ],
+    "date": "2026-07",
+    "summary": "从误判 HarmonyOS 到确认 Android 12，使用只读 Binder 探针定位 Google Play Licensing 与 Play Integrity 阻塞，并验证 GBox 内 Play 商店安装官方 ChatGPT 的可行边界。",
+    "abstract": "本项目记录一台无原生完整 GMS 的 Android 12 手机运行官方 ChatGPT 的完整诊断过程。静态依赖、运行日志和原创只读探针共同表明，原生侧载的第一道硬阻塞来自 Google Play 许可证服务，Play Integrity 也参与关键路径，而 FCM 缺失并非首要门槛。实验没有 root、刷机、修改官方 APK、伪造许可证或 Integrity token，最终通过 GBox 内置 Google Play 环境安装 OpenAI 发布的官方 ChatGPT，并成功进入登录界面。公开包包含原创探针源码、脱敏服务矩阵、13 页 PDF、复现脚本和隐私边界。",
+    "github": "https://github.com/3099404236/chatgpt-gbox-reference-kit",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v0.1",
+        "date": "2026-07",
+        "note": "首个公开版本：包含只读 GMS/Google Play 兼容探针、脱敏实验结果、13 页中文报告和公开包审计脚本。",
+        "pdf": "papers/chatgpt-gbox-reference-kit-v0.1.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
+    "slug": "a-share-institutional-behavior",
+    "category": "research",
+    "kind": "实证量化研究",
+    "title": "A股“主力吸筹”叙事的实证检验：机构持仓、处罚案例与可交易性",
+    "authors": [
+      "Junxiang Zeng"
+    ],
+    "date": "2026-07",
+    "summary": "使用2015至2025年历史全市场机构持仓、日线行情和证监会处罚案例，检验“低波动横盘、缩量吸筹、温和放量拉升”叙事，并在公告日、可成交性、交易成本和样本外约束下测试其可交易性。",
+    "abstract": "本研究从持仓真相和官方处罚记录倒推量价行为，而不是先按K线猜测主力。样本包含44个季度、5,453个历史A股代码、162,791个相邻季度机构持仓变化、28个操纵窗口和17,361个纯价量信号。机构增持最高组相对最低组的当季收益均值为7.75%，但成交额斜率没有稳健增加；16个可配对处罚周期的出货期成交额约高175.2%。公告后机构信号与纯价量信号在扣除35bp往返成本后均未形成稳健的正alpha，2023至2025留出期结论也不支持可投入实盘的“主力战法”。",
+    "github": "https://github.com/3099404236/a-share-institutional-behavior",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v1.0",
+        "date": "2026-07",
+        "note": "首个正式版本：包含完整研究代码、历史股票池、处罚案例登记、聚合结果、九页PDF报告和复现说明。",
+        "pdf": "papers/a-share-institutional-behavior.pdf",
+        "slides": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
+    "slug": "csi300-distribution-forecast",
+    "category": "research",
+    "kind": "量化研究笔记",
+    "title": "沪深300历史成分股下的收益分布预测与交易检验",
+    "authors": [
+      "Junxiang Zeng"
+    ],
+    "date": "2026-07",
+    "summary": "使用历史时点沪深300成分股比较QRNN、EWMA、GARCH和历史分布，并检验预测偏度多空策略。QRNN的CRPS略优于基线，但策略在10个基点成本后亏损。",
+    "abstract": "本项目基于596只历史成分股构建point-in-time面板，在2023至2025年测试期比较未来5日收益分布预测。QRNN在216,046个统一样本上的CRPS为0.026791，较EWMA改善约0.83%。收盘后生成信号并在下一日开盘执行的偏度多空策略，毛收益年化均值为1.76%，加入10个基点调仓成本后为-3.24%；毛收益检验p值为0.774。结果支持分布预测存在轻微增益，但不支持策略具有可交易的盈利能力。",
+    "github": "https://github.com/3099404236/csi300-distribution-forecast",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v0.1",
+        "date": "2026-07",
+        "note": "首个公开版本：包含完整代码、历史成分口径、聚合结果和四页PDF报告。",
+        "pdf": "papers/csi300-distribution-forecast.pdf",
+        "slides": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
+    "slug": "gender-swapped-career-benchmark",
+    "category": "research",
+    "kind": "探索性研究",
+    "title": "性别交换职业评估中的大模型差异",
+    "authors": [
+      "3099404236"
+    ],
+    "date": "2026-07",
+    "summary": "使用30对仅替换姓名与性别的职业档案，比较大模型在整体前景、职业天花板和限制性建议上的输出差异。",
+    "abstract": "本项目构造覆盖30个行业与岗位转型场景的性别交换职业档案，生成60份独立职业评估，再经匿名化后进行随机A/B盲评。三个总体指标均未达到统计显著，但财务分析师到基金经理、航空运营经理到运营总监等案例出现了方向一致的女性不利差异。当前结果是同一模型生成并裁判、每对只运行一次的探索性pilot，适合发现案例，不作为模型存在或不存在性别偏见的最终结论。",
+    "github": "https://github.com/3099404236/gender-swapped-career-benchmark",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v0.1",
+        "date": "2026-07",
+        "note": "首个公开版本：包含完整代码、30对提示、60份回答、盲评记录和三页PDF报告。",
+        "pdf": "papers/gender-swapped-career-benchmark-v0.1.pdf",
+        "slides": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
+    "slug": "example-llm-conversation-stance",
+    "category": "research",
+    "kind": "研究笔记",
+    "title": "大模型对话姿态的探索性测量",
+    "authors": [
+      "3099404236"
+    ],
+    "date": "2026-07",
+    "summary": "这是一个用于测试发布流程的轻量研究笔记示例。项目把代码、PDF 和可选讨论入口放在一起，DOI 和幻灯片则只作为阶段性成果的可选项。",
+    "abstract": "这个示例用于演示轻量研究笔记的发布工作流。真正使用时，把这里替换成具体项目的标题、摘要、PDF、代码和版本记录即可。研究类项目如果有 PDF，详情页会自动写入 Google Scholar 友好的 citation metadata；工具和应用类项目则不必强行伪装成论文。",
+    "github": "https://github.com/3099404236/research-note-template",
+    "discussion": "https://github.com/3099404236/research-note-template/discussions",
+    "versions": [
+      {
+        "label": "v0.1",
+        "date": "2026-07",
+        "note": "发布流程演示：包含一份简单 PDF 报告。",
+        "pdf": "papers/example-llm-conversation-stance.pdf",
+        "slides": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
+    "slug": "a-share-pe-thermometer",
+    "category": "applications",
+    "kind": "量化研究仪表盘",
+    "title": "A股四指数 PE 温度计",
+    "authors": [
+      "3099404236"
+    ],
+    "date": "2026-07",
+    "summary": "使用沪深300、上证50、中证500和中证1000的官方滚动 PE，展示当前估值区间，并公开月末扩展 P25 严格回测的样本数、收益、回撤、超额和逐笔事件。",
+    "abstract": "本项目从一个五指数、多来源抓取、固定阈值并硬编码命中率的估值页面，重构为可复现的四指数研究仪表盘。数据统一来自中证指数有限公司官方历史行情接口；回测只使用月末 PE，每个时点仅用当时已知数据计算至少五年历史的扩展窗口 P25，连续低估区去重并设置六个月冷却期。官方数据覆盖期内仅出现2024年1月一个独立事件：四指数等权组合12个月收益18.93%，24个月收益54.10%，最大回撤-17.03%；由于 N=1，项目明确不把100%命中率解释为稳定策略。仓库包含官方快照、逐月审计、事件明细、测试、网页和16页中文项目报告。",
+    "github": "https://github.com/3099404236/a-share-pe-thermometer",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v1.0",
+        "date": "2026-07",
+        "note": "首个可复现公开版本：统一官方四指数 PE，新增严格月末回测、逐笔事件、动态网页结果和16页中文项目全程报告。",
+        "pdf": "papers/a-share-pe-thermometer-v1.0.pdf",
+        "slides": "",
+        "demo": "https://pethermometersite.vercel.app",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
+    "slug": "agent-recommender-system",
+    "category": "applications",
+    "kind": "产品原型",
+    "title": "基于需求匹配的亲子游戏 Agent 推荐系统",
+    "authors": [
+      "3099404236"
+    ],
+    "date": "2026-07",
+    "summary": "通过 2-3 轮自然对话或三道情景题识别家长当前需求，再由本地确定性规则推荐主 Agent 和备选 Agent。",
+    "abstract": "亲子游戏管理可能对应规则执行、共同协商、关系修复、作息观察或现实风险。V2 用中性追问形成临时需求画像，模型不直接决定 Agent，最终匹配、风险覆盖和紧急分流均由本地代码控制；无模型或无网络时自动回退到本地关键词和三题问卷。系统不需要爬虫、训练或数据库。",
+    "github": "https://github.com/3099404236/agent-recommender-system",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v0.1",
+        "date": "2026-07",
+        "note": "首个公开版本：包含离线问卷、5 个 Agent 配置、固定规则推荐、验证结果和六页 PDF 项目报告。",
+        "pdf": "papers/agent-recommender-system-v0.1.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      },
+      {
+        "label": "v0.2",
+        "date": "2026-07",
+        "note": "第二版：新增 2-3 轮对话识别、服务端临时需求画像、确定性推荐、安全分流和离线回退；保留第一版问卷。",
+        "pdf": "papers/agent-recommender-system-v0.2.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
+    "slug": "evolvegcn-code-lineage-audit",
+    "category": "research",
+    "kind": "代码审计研究笔记",
+    "title": "EvolveGCN 论文谱系、代码增量与文本对应审计",
+    "authors": [
+      "Junxiang Zeng"
+    ],
+    "date": "2026-07",
+    "summary": "沿 GCN、GCRN、EvolveGCN 与 DynamicGEM 的代码谱系定位真实算法增量，并逐段统计五篇论文中核心创新、代码实现、理论动机和非代码文本的篇幅。",
+    "abstract": "本项目构建一个从论文 PDF、引用谱系、历史仓库锁定到代码语义对比和论文逐段审计的可复现流程。阶段一确认 EvolveGCN 的关键增量是把跨时间递归状态从依赖节点数的节点表示改为只依赖特征维度的 GCN 权重矩阵，并核对 H 版 TopK 适配与 O 版论文/代码不一致。阶段二分析 4 个代码库对应的 5 篇论文，共计 274 个正文自然段和 23,151 个英文词，其中核心创新为 52 段、4,197 词，占 18.1%。",
+    "github": "https://github.com/3099404236/evolvegcn-code-lineage-audit",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v1.0",
+        "date": "2026-07",
+        "note": "阶段一：论文谱系、历史仓库锁定与代码级技术增量。",
+        "pdf": "papers/evolvegcn-code-lineage-audit-v1.0.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      },
+      {
+        "label": "v2.0",
+        "date": "2026-07",
+        "note": "完整保留阶段一，并追加五篇论文逐段文本与代码对应分析。",
+        "pdf": "papers/evolvegcn-code-lineage-audit-v2.0.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
+    "slug": "a-share-individual-stock-valuation",
+    "category": "research",
+    "kind": "实证量化研究",
+    "title": "A股个股估值、持有期限与深亏恢复路径",
+    "authors": [
+      "Junxiang Zeng"
+    ],
+    "date": "2026-07",
+    "summary": "从真实单股事件出发，检验长期亏约3%的说法、PE/PB高低估值、组合分散化以及深亏后的回本路径。",
+    "abstract": "基于883,595条A股月末记录和21,831笔互不重叠的低估值单股事件，研究固定持有期终值、个股自身PE/PB分位、1至50只组合的分散化，以及跌破30%或50%后的曾经回本与期末盈利。结果不支持单股长期收益收敛到约-3%的字面命题；低估值样本长期优于高估值样本，但仍可能经历深亏；从1只增加到5只带来的尾部风险下降最大。",
+    "github": "https://github.com/3099404236/a-share-individual-stock-valuation",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v1.0",
+        "date": "2026-07",
+        "note": "首个公开版本：完整个股研究、逐笔路径审计、代码与可复核结果。",
+        "pdf": "papers/a-share-individual-stock-valuation-v1.0.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
+    "slug": "fpga-quadcopter-hil",
+    "category": "applications",
+    "kind": "FPGA 硬件在环原型",
+    "title": "基于 FPGA 的四旋翼飞控硬件在环仿真",
+    "authors": [
+      "3099404236"
+    ],
+    "date": "2026-07",
+    "summary": "在 XC7A35T 的 MicroBlaze/FreeRTOS 上运行 100 Hz 定点 PID，并通过 PyBullet、非理想传感器与 UART 构成可复现的四旋翼 HIL 闭环。",
+    "abstract": "本项目实现了一套面向达芬奇 A7 XC7A35T 的四旋翼飞控硬件在环原型。电脑端负责刚体动力学、带噪声和延迟的传感器模型及状态估计；FPGA 上的 MicroBlaze/FreeRTOS 使用 Q12 定点数执行 100 Hz PID 并返回四路电机推力。系统完成了二进制协议、CRC16、超时保护、积分抗饱和、阵风恢复和持续外力抑制验证。15 秒阵风测试实现 1450/1450 次请求成功且零超时，持续 4 N 外力 40 秒后的 X 方向误差约为 0.13 m。",
+    "github": "https://github.com/3099404236/fpga-quadcopter-hil",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v0.1",
+        "date": "2026-07",
+        "note": "首个公开版本：完成 PC 仿真、FPGA 定点 PID、HIL 通信、阵风和持续外力验证。",
+        "pdf": "papers/fpga-quadcopter-hil-v0.1.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
+    "slug": "termux-multimodel-qq-bot",
+    "category": "applications",
+    "kind": "应用系统",
+    "title": "基于 Termux 的多模型 QQ 群聊机器人系统",
+    "authors": [
+      "3099404236"
+    ],
+    "date": "2026-08-01",
+    "summary": "在 Redmi Android 手机上串联 NapCat、AstrBot、Antigravity 与 ChatGPT 网页桥的长期运行 QQ 群聊机器人。",
+    "abstract": "该项目把 QQ 接入、群聊记忆、OpenAI 兼容路由、持久化交互式终端、显式模型选择、Exa 搜索授权、ChatGPT 网页会话、图片回传、长回复整理、延迟观测和进程守护组合成一套可在 Termux/proot Ubuntu 中运行的完整系统。公开版本源自 2026-08-01 的生产手机只读快照，并移除了账号、Cookie、API Key、聊天记录、数据库、日志和浏览器 Profile。",
+    "github": "https://github.com/3099404236/termux-multimodel-qq-bot",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v0.1.0",
+        "date": "2026-08-01",
+        "note": "首个公开、脱敏且带 PDF 报告的完整手机端快照。",
+        "pdf": "papers/termux-multimodel-qq-bot-v0.1.0.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      },
+      {
+        "label": "v0.2.0",
+        "date": "2026-08-02",
+        "note": "扩展工程报告：补充 WorkBuddy 故障时间线、九类真实事故、量化性能对比、超时链、监控与恢复设计。",
+        "pdf": "papers/termux-multimodel-qq-bot-v0.2.0.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
+    "slug": "progress-radar",
+    "category": "applications",
+    "kind": "桌面应用",
+    "title": "ProgressRadar：本地优先的个人进度雷达与复盘系统",
+    "authors": [
+      "3099404236"
+    ],
+    "date": "2026-08",
+    "summary": "把零散记录转化为可追踪进展，并用阶段、周期、成就、任务与灵感视图支持长期复盘的本地桌面应用。",
+    "abstract": "ProgressRadar 是一个本地优先的个人项目进度系统。它通过桌面快速粘贴与 AI 结构化归类，把非线性的日常记录组织为阶段、周期、时间线和成就；v2.1 新增锦囊任务板、灵犀阁、个人主页增量扫描，以及带 DPAPI 密钥保护、Windows 计划任务、状态网页和双色悬浮球的私人 GitHub 完整备份流程。",
+    "github": "https://github.com/3099404236/progress-radar",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v2.1",
+        "date": "2026-08",
+        "note": "新增锦囊任务板、灵犀阁、个人主页扫描与可监控的私有完整备份。",
+        "pdf": "papers/progress-radar-v2.1.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
+    "slug": "holmes-voice-qq-bridge",
+    "category": "applications",
+    "kind": "免触控语音消息系统",
+    "title": "福尔摩斯：双手机免触控语音转 QQ 消息系统",
+    "authors": [
+      "3099404236"
+    ],
+    "date": "2026-08",
+    "summary": "以离线唤醒词、华为输入法桥接、双阶段确认和跨手机 outbox 实现免触控语音转 QQ 消息。",
+    "abstract": "本项目把离线关键词检测、个人语音校验、Android 无障碍输入法桥接、待确认状态机、跨手机可靠队列和 AstrBot QQ 投递组合成一条免触控语音消息链路。工程报告记录原生 Sound Trigger 审计、误发送事故、安全修复、华为后台限制、网络诊断、延迟测量与隐私边界。",
+    "github": "https://github.com/3099404236/holmes-voice-qq-bridge",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v1.0",
+        "date": "2026-08",
+        "note": "首个脱敏公开版本，包含代码、测试和完整工程报告。",
+        "pdf": "papers/holmes-voice-qq-bridge-v1.0.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
+    "slug": "eye-rest-sync",
+    "category": "applications",
+    "kind": "跨设备护眼应用",
+    "title": "休息：Windows 与 HarmonyOS 同步离屏休息工具",
+    "authors": [
+      "3099404236"
+    ],
+    "date": "2026-08",
+    "summary": "Windows 累计 40 分钟有效使用后覆盖全部显示器 10 分钟，并通过 HTTPS 中继让 Android/HarmonyOS 手机同步进入休息遮罩。",
+    "abstract": "本项目实现一个跨 Windows 与 Android/HarmonyOS 的强制离屏休息系统。Windows 客户端基于 Python、Tkinter 和 Win32 API，支持空闲感知计时、多显示器遮罩、托盘控制和紧急退出；Node.js 中继采用控制/只读令牌隔离并保留带版本号的休息状态；手机端使用原生 Java 前台服务和悬浮窗，通过 HTTPS 长轮询同步黑屏。公开版本包含 12 项自动测试、双显示器验证、HarmonyOS 4.2 实机验证，以及移除 USB 本地映射后的公网端到端测试。",
+    "github": "https://github.com/3099404236/eye-rest-sync",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v0.1",
+        "date": "2026-08",
+        "note": "首个公开版本：包含 Windows、Android/HarmonyOS 与状态中继源码、测试和中文 PDF 报告。",
+        "pdf": "papers/eye-rest-sync-v0.1.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
+    "slug": "chinese-semantic-mirror",
+    "category": "tools",
+    "kind": "可执行语言原型",
+    "title": "中文语义镜像语言 MVP",
+    "authors": [
+      "3099404236"
+    ],
+    "date": "2026-08",
+    "summary": "把严格中文程序与生成的 C++ 放在同一语义模型下执行和对照，用可运行的中文投影辅助审阅 AI 生成代码。",
+    "abstract": "本项目实现一个面向 AI 时代代码审阅的中文语义镜像语言最小可行产品。原型解析一段严格中文程序，构造统一语义模型，再分别交给 Python 解释器和 C++17/GCC 后端执行，并比较退出状态、标准输出和标准错误。网页演示支持正常输入、边界输入、输入错误与语法定位。当前版本只覆盖整数序列筛选和排序，但已经验证中文程序可执行、目标代码可生成、两条路径可自动判定同对同错。",
+    "github": "https://github.com/3099404236/chinese-semantic-mirror",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v0.1",
+        "date": "2026-08",
+        "note": "首个公开 MVP：包含中文 DSL、解释器、C++17 生成器、GCC 对照执行、网页演示、7 项自动测试和中文 PDF 报告。",
+        "pdf": "papers/chinese-semantic-mirror-v0.1.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
+    "slug": "chatgpt-web-codex-bridge",
+    "category": "tools",
+    "kind": "开发工具",
+    "title": "ChatGPT 网页到 Codex 的 Responses API 实验桥接器",
+    "authors": [
+      "3099404236"
+    ],
+    "date": "2026-08",
+    "summary": "把已登录的 ChatGPT 网页接入 Codex 工具循环，以三条粘性工作通道和一条专用旁白通道支持并发、跨重启恢复与可解释观测。",
+    "abstract": "这是一个面向本机实验的 Windows Agent 工作台。它接收 Codex 的 Responses API 请求，通过 Chrome DevTools MCP 复用用户已经登录的 ChatGPT 标签页，再把网页回答转换为文本、函数调用或原生 apply_patch 事件。第三版把单页控制扩展为三条相互隔离的工作通道与一条持久旁白通道：工作通道使用会话亲和、租约代数和差异化空闲释放避免多个任务争抢同一标签页；旁白通道把已完成或失败的工作回合解释为可读进度，并在通道离线时本地排队、恢复后补放。启动器新增多次直连探测、健康 3+1 拓扑防降级，以及只匹配 Chrome 远程调试许可窗口的自动允许脚本。项目仍保留持久 URL、同页故障恢复、请求去重、长文本分块、结构化检查点和明确 Responses 终态；不绕过登录、验证码、用量限制或网站风控，也不声称等价于 OpenAI 官方 Responses API。",
+    "github": "https://github.com/3099404236/chatgpt-web-codex-bridge",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v0.1",
+        "date": "2026-07",
+        "note": "首个公开实验版本：支持同对话续轮、SSE、shell_command、apply_patch 和自动补丁后备。",
+        "pdf": "papers/chatgpt-web-codex-bridge-v0.1.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      },
+      {
+        "label": "v0.2",
+        "date": "2026-08",
+        "note": "第二版：新增已有 Chrome 标签页复用、持久会话 URL、同页故障恢复、结构化检查点、请求去重、长文本分块、可视化工作台和 52 项测试。",
+        "pdf": "papers/chatgpt-web-codex-bridge-v0.2.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      },
+      {
+        "label": "v0.3",
+        "date": "2026-08",
+        "note": "第三版：新增三条粘性工作通道、一条持久旁白通道、离线队列补放、差异化租期、健康拓扑防降级、Chrome 许可精确自动点击和 91 项测试。",
+        "pdf": "papers/chatgpt-web-codex-bridge-v0.3.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  }
 ]
