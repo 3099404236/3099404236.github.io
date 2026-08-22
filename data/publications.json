@@ -460,5 +460,31 @@
         "doi": ""
       }
     ]
+  },
+  {
+    "slug": "llm-behavioral-fingerprints",
+    "category": "research",
+    "kind": "实验报告",
+    "title": "大语言模型行为指纹：OpenCode Go、Codex GPT-5.x 与 ChatGPT 网页版的可复现实验",
+    "authors": [
+      "3099404236"
+    ],
+    "date": "2026-08",
+    "summary": "公开 4,000 个短回答与完整分析代码，检验端点重复性、公开指纹库迁移、Codex 六配置识别和 ChatGPT 网页版最近邻。",
+    "abstract": "本项目复现并扩展单 token 行为指纹方法，公开 OpenCode Go 五端点、公开 PAMELA 图谱复测、Codex 六种 GPT-5.x 运行配置和 ChatGPT 网页版四组实验。结果表明，固定协议下的短答案分布可以稳定区分若干运行配置；Hy3 与精确 MiMo-V2.5 参考在跨供应商复测中排名第一；网页版目标在两个共享来源的参考库中均以 GPT-5.4 为稳定最近邻。所有结论均限定为行为相似性或封闭候选集识别，不把最近邻结果解释为底层权重或后台路由的身份证明。",
+    "github": "https://github.com/3099404236/llm-behavioral-fingerprints",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v0.1",
+        "date": "2026-08",
+        "note": "首个公开版本：代码、原始数据、公共参考、验证结果与中文 PDF。",
+        "pdf": "papers/llm-behavioral-fingerprints-v0.1.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
   }
 ]
