@@ -1,5 +1,33 @@
 [
   {
+    "slug": "context-handoff-paradigm",
+    "category": "research",
+    "kind": "分布式系统与智能体架构研究",
+    "title": "面向长程自主智能体的上下文转移范式与解耦架构研究",
+    "authors": [
+      "Sherlock",
+      "Rumu",
+      "Dave"
+    ],
+    "date": "2026-09",
+    "summary": "针对长程自主 Agent 在物理设备上的中断难题，提出环境、认知与控制三层解耦的上下文转移范式，实现跨设备无缝接力与协作状态迁移。",
+    "abstract": "长程自主智能体在执行长耗时运维排障与代码重构时，普遍面临物理设备绑定、移动休眠中断与协同交接困难等瓶颈。传统基于操作系统进程冻结或终端流（如 Tmux）的技术无法捕获语义层面的认知状态，且易与本地环境强耦合。本文提出一种目标环境面、认知状态面、控制执行面三层解耦的上下文转移范式（CHP）。设计了规范化上下文切片协议（ContextBundle）、面向协同的高层语义交接便签（HandoverNote）及带 TTL 的排他租约锁。实验表明 CHP 实现了 100% 认知状态无损恢复，快照体积仅约 3.5 KB，恢复时延低于 15 ms，为长程 Agent 的跨设备接力与人机协同奠定了基础。",
+    "github": "https://github.com/3099404236/context-handoff-paradigm",
+    "discussion": "",
+    "versions": [
+      {
+        "label": "v0.1.0",
+        "date": "2026-09",
+        "note": "首个公开版本：包含三层解耦协议模型、状态中继与租约锁、无缝接力执行引擎、3.5KB 真实切片样本与 3 页学术报告。",
+        "pdf": "papers/context-handoff-paradigm-v0.1.0.pdf",
+        "slides": "",
+        "demo": "",
+        "release": "",
+        "doi": ""
+      }
+    ]
+  },
+  {
     "slug": "chatgpt-gbox-reference-kit",
     "category": "research",
     "kind": "系统兼容性研究笔记",
